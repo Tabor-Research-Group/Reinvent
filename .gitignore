@@ -7,6 +7,7 @@ tags
 /configs/config.json
 README_internal.md
 .DS_Store
+.directory
 
 # Coverage.py output
 .coverage
