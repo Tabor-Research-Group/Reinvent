@@ -6,9 +6,9 @@ from abc import ABC, abstractmethod
 import pandas as pd
 from typing import List
 
-from running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
-from running_modes.configurations.logging.scoring_log_configuration import ScoringLoggerConfiguration
-from running_modes.enums.scoring_runner_enum import ScoringRunnerEnum
+from ReinventQC.running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
+from ReinventQC.running_modes.configurations.logging.scoring_log_configuration import ScoringLoggerConfiguration
+from ReinventQC.running_modes.enums.scoring_runner_enum import ScoringRunnerEnum
 from reinvent_scoring.scoring.score_summary import FinalSummary
 
 

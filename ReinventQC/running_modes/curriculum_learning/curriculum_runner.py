@@ -13,17 +13,17 @@ from reinvent_scoring.scoring.score_summary import FinalSummary
 from reinvent_scoring.scoring.scoring_function_factory import ScoringFunctionFactory
 from reinvent_scoring.scoring.scoring_function_parameters import ScoringFunctionParameters
 
-from running_modes.automated_curriculum_learning.inception.inception import Inception
-from running_modes.configurations import GeneralConfigurationEnvelope, InceptionConfiguration
-from running_modes.configurations.curriculum_learning.curriculum_learning_components import CurriculumLearningComponents
-from running_modes.configurations.curriculum_learning.curriculum_learning_configuration import \
+from ReinventQC.running_modes.automated_curriculum_learning.inception.inception import Inception
+from ReinventQC.running_modes.configurations import GeneralConfigurationEnvelope, InceptionConfiguration
+from ReinventQC.running_modes.configurations.curriculum_learning.curriculum_learning_components import CurriculumLearningComponents
+from ReinventQC.running_modes.configurations.curriculum_learning.curriculum_learning_configuration import \
     CurriculumLearningConfiguration
-from running_modes.constructors.base_running_mode import BaseRunningMode
-from running_modes.curriculum_learning.logging import CurriculumLogger
-from running_modes.curriculum_learning.update_watcher import UpdateWatcher
-from running_modes.enums.model_type_enum import ModelTypeEnum
-from running_modes.reinforcement_learning.margin_guard import MarginGuard
-from running_modes.utils import to_tensor
+from ReinventQC.running_modes.constructors.base_running_mode import BaseRunningMode
+from ReinventQC.running_modes.curriculum_learning.logging import CurriculumLogger
+from ReinventQC.running_modes.curriculum_learning.update_watcher import UpdateWatcher
+from ReinventQC.running_modes.enums.model_type_enum import ModelTypeEnum
+from ReinventQC.running_modes.reinforcement_learning.margin_guard import MarginGuard
+from ReinventQC.running_modes.utils import to_tensor
 
 
 class CurriculumRunner(BaseRunningMode):
@@ -169,4 +169,3 @@ class CurriculumRunner(BaseRunningMode):
         inception_config = InceptionConfiguration(**inception_parameters)
         inception = Inception(inception_config, self.scoring_function, self._prior)
         return inception
-

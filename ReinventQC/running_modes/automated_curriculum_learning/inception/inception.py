@@ -4,7 +4,7 @@ from typing import Tuple, List
 
 from reinvent_chemistry.conversions import Conversions
 
-from running_modes.configurations import InceptionConfiguration
+from ReinventQC.running_modes.configurations import InceptionConfiguration
 
 
 class Inception:

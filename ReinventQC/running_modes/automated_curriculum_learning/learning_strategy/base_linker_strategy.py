@@ -4,8 +4,8 @@ from typing import Tuple
 import numpy as np
 import torch
 
-from running_modes.automated_curriculum_learning.learning_strategy.base_learning_strategy import BaseLearningStrategy
-from running_modes.automated_curriculum_learning.learning_strategy.learning_strategy_configuration import \
+from ReinventQC.running_modes.automated_curriculum_learning.learning_strategy.base_learning_strategy import BaseLearningStrategy
+from ReinventQC.running_modes.automated_curriculum_learning.learning_strategy.learning_strategy_configuration import \
     LearningStrategyConfiguration
 
 

@@ -7,10 +7,10 @@ from reinvent_models.model_factory.generative_model_base import GenerativeModelB
 from reinvent_scoring.scoring.diversity_filters.curriculum_learning.base_diversity_filter import BaseDiversityFilter
 from reinvent_scoring.scoring.function.base_scoring_function import BaseScoringFunction
 
-from running_modes.automated_curriculum_learning.dto import CurriculumOutcomeDTO
-from running_modes.automated_curriculum_learning.inception.inception import Inception
-from running_modes.automated_curriculum_learning.logging.base_logger import BaseLogger
-from running_modes.configurations.automated_curriculum_learning.prodcution_strategy_input_configuration import \
+from ReinventQC.running_modes.automated_curriculum_learning.dto import CurriculumOutcomeDTO
+from ReinventQC.running_modes.automated_curriculum_learning.inception.inception import Inception
+from ReinventQC.running_modes.automated_curriculum_learning.logging.base_logger import BaseLogger
+from ReinventQC.running_modes.configurations.automated_curriculum_learning.prodcution_strategy_input_configuration import \
     ProductionStrategyInputConfiguration
 
 
@@ -46,4 +46,3 @@ class BaseProductionStrategy(ABC):
         text_to_log = f"** Production setup **\n scoring_function: " \
                       f"{[component.get('name') for component in current_parameters]}"
         self._logger.log_message(text_to_log)
-

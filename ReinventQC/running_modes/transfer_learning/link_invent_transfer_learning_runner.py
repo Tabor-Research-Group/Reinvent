@@ -7,12 +7,12 @@ from reinvent_chemistry.file_reader import FileReader
 from reinvent_models.link_invent.dataset.paired_dataset import PairedDataset
 from reinvent_models.model_factory.generative_model_base import GenerativeModelBase
 
-from running_modes.configurations.transfer_learning.link_invent_transfer_learning_configuration import \
+from ReinventQC.running_modes.configurations.transfer_learning.link_invent_transfer_learning_configuration import \
     LinkInventTransferLearningConfiguration
-from running_modes.constructors.base_running_mode import BaseRunningMode
-from running_modes.transfer_learning.link_invent_actions.collect_stats import CollectStats
-from running_modes.transfer_learning.link_invent_actions.train_epoch import TrainEpoch
-from running_modes.transfer_learning.logging.local_link_invent_transfer_learning_logger import \
+from ReinventQC.running_modes.constructors.base_running_mode import BaseRunningMode
+from ReinventQC.running_modes.transfer_learning.link_invent_actions.collect_stats import CollectStats
+from ReinventQC.running_modes.transfer_learning.link_invent_actions.train_epoch import TrainEpoch
+from ReinventQC.running_modes.transfer_learning.logging.local_link_invent_transfer_learning_logger import \
     LocalLinkInventTransferLearningLogger
 
 

@@ -1,6 +1,6 @@
 import abc
 
-from running_modes.reinforcement_learning.logging.local_reinforcement_logger import LocalReinforcementLogger
+from ReinventQC.running_modes.reinforcement_learning.logging.local_reinforcement_logger import LocalReinforcementLogger
 
 
 class BaseAction(abc.ABC):

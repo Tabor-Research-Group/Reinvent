@@ -1,7 +1,7 @@
 import torch
 
-from running_modes.reinforcement_learning.configurations.learning_strategy_configuration import LearningStrategyConfiguration
-from running_modes.reinforcement_learning.learning_strategy import BaseLearningStrategy
+from ReinventQC.running_modes.reinforcement_learning.configurations.learning_strategy_configuration import LearningStrategyConfiguration
+from ReinventQC.running_modes.reinforcement_learning.learning_strategy import BaseLearningStrategy
 
 
 class DAPStrategy(BaseLearningStrategy):
@@ -23,6 +23,5 @@ class DAPStrategy(BaseLearningStrategy):
         loss = torch.pow((augmented_nlls - negative_actor_nlls), 2)
         loss = loss.mean()
         return loss, negative_actor_nlls, negative_critic_nlls, augmented_nlls
-
 
 

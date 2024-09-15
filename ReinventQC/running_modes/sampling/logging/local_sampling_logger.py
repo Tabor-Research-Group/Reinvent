@@ -1,9 +1,9 @@
 import numpy as np
 from torch.utils.tensorboard import SummaryWriter
 
-from running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
-from running_modes.configurations.logging.sampling_log_configuration import SamplingLoggerConfiguration
-from running_modes.sampling.logging.base_sampling_logger import BaseSamplingLogger
+from ReinventQC.running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
+from ReinventQC.running_modes.configurations.logging.sampling_log_configuration import SamplingLoggerConfiguration
+from ReinventQC.running_modes.sampling.logging.base_sampling_logger import BaseSamplingLogger
 from reinvent_chemistry.logging import add_mols, fraction_valid_smiles
 
 

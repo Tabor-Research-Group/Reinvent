@@ -1,5 +1,5 @@
-from running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
-from running_modes.validation.logging.base_validation_logger import BaseValidationLogger
+from ReinventQC.running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
+from ReinventQC.running_modes.validation.logging.base_validation_logger import BaseValidationLogger
 
 
 class LocalValidationLogger(BaseValidationLogger):
@@ -8,4 +8,3 @@ class LocalValidationLogger(BaseValidationLogger):
 
     def log_message(self, message: str):
         self._common_logger.info(message)
-

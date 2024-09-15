@@ -5,9 +5,9 @@ from pydantic import Field
 from reinvent_scoring import ScoringFunctionParameters
 from reinvent_scoring.scoring.diversity_filters.curriculum_learning import DiversityFilterParameters
 
-from running_modes.automated_curriculum_learning.learning_strategy.learning_strategy_configuration import \
+from ReinventQC.running_modes.automated_curriculum_learning.learning_strategy.learning_strategy_configuration import \
     LearningStrategyConfiguration
-from running_modes.configurations import InceptionConfiguration
+from ReinventQC.running_modes.configurations import InceptionConfiguration
 
 
 @dataclass

@@ -2,8 +2,8 @@ import json
 import os
 import time
 
-from running_modes.configurations import GeneralConfigurationEnvelope
-from running_modes.configurations.curriculum_learning import CurriculumLearningComponents, \
+from ReinventQC.running_modes.configurations import GeneralConfigurationEnvelope
+from ReinventQC.running_modes.configurations.curriculum_learning import CurriculumLearningComponents, \
     CurriculumLearningConfiguration
 
 

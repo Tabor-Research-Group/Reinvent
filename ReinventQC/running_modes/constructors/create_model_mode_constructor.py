@@ -1,12 +1,12 @@
 from dacite import from_dict
 
-from running_modes.constructors.base_running_mode import BaseRunningMode
-from running_modes.configurations import GeneralConfigurationEnvelope, CreateModelConfiguration, \
+from ReinventQC.running_modes.constructors.base_running_mode import BaseRunningMode
+from ReinventQC.running_modes.configurations import GeneralConfigurationEnvelope, CreateModelConfiguration, \
     LinkInventCreateModelConfiguration
-from running_modes.create_model import CreateModelRunner, LinkInventCreateModelRunner
-from running_modes.create_model.logging.create_model_logger import CreateModelLogger
-from running_modes.enums.model_type_enum import ModelTypeEnum
-from running_modes.utils.general import set_default_device_cuda
+from ReinventQC.running_modes.create_model import CreateModelRunner, LinkInventCreateModelRunner
+from ReinventQC.running_modes.create_model.logging.create_model_logger import CreateModelLogger
+from ReinventQC.running_modes.enums.model_type_enum import ModelTypeEnum
+from ReinventQC.running_modes.utils.general import set_default_device_cuda
 
 
 class CreateModelModeConstructor:

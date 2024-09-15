@@ -4,8 +4,8 @@ from reinvent_scoring.scoring.diversity_filters.reinvent_core.diversity_filter_p
     DiversityFilterParameters
 from reinvent_scoring.scoring.scoring_function_parameters import ScoringFunctionParameters
 
-from running_modes.configurations.reinforcement_learning.inception_configuration import InceptionConfiguration
-from running_modes.configurations.reinforcement_learning.reinforcement_learning_configuration import \
+from ReinventQC.running_modes.configurations.reinforcement_learning.inception_configuration import InceptionConfiguration
+from ReinventQC.running_modes.configurations.reinforcement_learning.reinforcement_learning_configuration import \
     ReinforcementLearningConfiguration
 
 

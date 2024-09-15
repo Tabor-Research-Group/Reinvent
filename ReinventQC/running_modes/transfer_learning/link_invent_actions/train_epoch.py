@@ -2,10 +2,10 @@ from reinvent_models.model_factory.enums.model_mode_enum import ModelModeEnum
 from reinvent_models.model_factory.generative_model_base import GenerativeModelBase
 from torch.nn.utils import clip_grad_norm_
 
-from running_modes.configurations.transfer_learning.link_invent_transfer_learning_configuration import \
+from ReinventQC.running_modes.configurations.transfer_learning.link_invent_transfer_learning_configuration import \
     LinkInventTransferLearningConfiguration
-from running_modes.transfer_learning.link_invent_actions.base_action import BaseAction
-from running_modes.transfer_learning.logging.base_transfer_learning_logger import BaseTransferLearningLogger
+from ReinventQC.running_modes.transfer_learning.link_invent_actions.base_action import BaseAction
+from ReinventQC.running_modes.transfer_learning.logging.base_transfer_learning_logger import BaseTransferLearningLogger
 
 
 class TrainEpoch(BaseAction):

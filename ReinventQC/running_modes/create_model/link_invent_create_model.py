@@ -5,8 +5,8 @@ from reinvent_models.link_invent.link_invent_model import LinkInventModel
 from reinvent_models.link_invent.model_vocabulary.paired_model_vocabulary import PairedModelVocabulary
 from reinvent_models.link_invent.networks import EncoderDecoder
 
-from running_modes.configurations import LinkInventCreateModelConfiguration
-from running_modes.create_model.logging.base_create_model_logger import BaseCreateModelLogger
+from ReinventQC.running_modes.configurations import LinkInventCreateModelConfiguration
+from ReinventQC.running_modes.create_model.logging.base_create_model_logger import BaseCreateModelLogger
 from reinvent_models.model_factory.enums.model_parameter_enum import ModelParametersEnum
 
 

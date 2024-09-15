@@ -5,8 +5,8 @@ from reinvent_models.lib_invent.models.dataset import DecoratorDataset
 from reinvent_models.link_invent.dataset.paired_dataset import PairedDataset
 from reinvent_models.model_factory.generative_model_base import GenerativeModelBase
 
-from running_modes.reinforcement_learning.dto.sampled_sequences_dto import SampledSequencesDTO
-from running_modes.reinforcement_learning.actions import BaseAction
+from ReinventQC.running_modes.reinforcement_learning.dto.sampled_sequences_dto import SampledSequencesDTO
+from ReinventQC.running_modes.reinforcement_learning.actions import BaseAction
 
 
 class LinkInventLikelihoodEvaluation(BaseAction):

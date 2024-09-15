@@ -1,4 +1,4 @@
-from running_modes.configurations.logging.base_log_config import BaseLoggerConfiguration
+from ReinventQC.running_modes.configurations.logging.base_log_config import BaseLoggerConfiguration
 
 
 class CurriculumLoggerConfiguration(BaseLoggerConfiguration):

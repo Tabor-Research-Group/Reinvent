@@ -9,9 +9,9 @@ import running_modes.utils.configuration as ull
 import reinvent_chemistry.logging as ul_rl
 import running_modes.utils.general as ul_gen
 
-from running_modes.configurations import GeneralConfigurationEnvelope, ReinforcementLoggerConfiguration, \
+from ReinventQC.running_modes.configurations import GeneralConfigurationEnvelope, ReinforcementLoggerConfiguration, \
     get_remote_logging_auth_token
-from running_modes.reinforcement_learning.logging.link_logging.base_reinforcement_logger import BaseReinforcementLogger
+from ReinventQC.running_modes.reinforcement_learning.logging.link_logging.base_reinforcement_logger import BaseReinforcementLogger
 
 
 class RemoteLinkReinforcementLogger(BaseReinforcementLogger):

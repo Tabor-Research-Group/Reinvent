@@ -3,8 +3,8 @@ from typing import List
 import torch.utils.data as tud
 from reinvent_models.lib_invent.models.dataset import DecoratorDataset
 
-from running_modes.reinforcement_learning.dto.sampled_sequences_dto import SampledSequencesDTO
-from running_modes.reinforcement_learning.actions import BaseAction
+from ReinventQC.running_modes.reinforcement_learning.dto.sampled_sequences_dto import SampledSequencesDTO
+from ReinventQC.running_modes.reinforcement_learning.actions import BaseAction
 
 
 class LikelihoodEvaluation(BaseAction):

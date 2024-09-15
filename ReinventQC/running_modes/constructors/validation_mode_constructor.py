@@ -1,9 +1,9 @@
 from dacite import from_dict
 from reinvent_scoring.scoring import ComponentParameters
 
-from running_modes.constructors.base_running_mode import BaseRunningMode
-from running_modes.configurations import GeneralConfigurationEnvelope
-from running_modes.validation.validation_runner import ValidationRunner
+from ReinventQC.running_modes.constructors.base_running_mode import BaseRunningMode
+from ReinventQC.running_modes.configurations import GeneralConfigurationEnvelope
+from ReinventQC.running_modes.validation.validation_runner import ValidationRunner
 
 
 class ValidationModeConstructor:

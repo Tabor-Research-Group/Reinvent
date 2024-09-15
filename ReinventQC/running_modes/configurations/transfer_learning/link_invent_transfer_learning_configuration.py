@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import Optional
 
-from running_modes.configurations.transfer_learning.link_invent_learning_rate_configuration import \
+from ReinventQC.running_modes.configurations.transfer_learning.link_invent_learning_rate_configuration import \
     LinkInventLearningRateConfiguration
 
 

@@ -7,9 +7,9 @@ from reinvent_scoring.scoring.enums.scoring_function_component_enum import Scori
 from reinvent_scoring.scoring.score_summary import FinalSummary
 from torch.utils.tensorboard import SummaryWriter
 
-from running_modes.configurations import ReinforcementLoggerConfiguration, GeneralConfigurationEnvelope
-from running_modes.reinforcement_learning.logging.link_logging.base_reinforcement_logger import BaseReinforcementLogger
-from running_modes.reinforcement_learning.logging.link_logging.console_message import ConsoleMessage
+from ReinventQC.running_modes.configurations import ReinforcementLoggerConfiguration, GeneralConfigurationEnvelope
+from ReinventQC.running_modes.reinforcement_learning.logging.link_logging.base_reinforcement_logger import BaseReinforcementLogger
+from ReinventQC.running_modes.reinforcement_learning.logging.link_logging.console_message import ConsoleMessage
 
 
 class LocalBondLinkReinforcementLogger(BaseReinforcementLogger):
@@ -87,5 +87,4 @@ class LocalBondLinkReinforcementLogger(BaseReinforcementLogger):
                 if len(smarts) > 0:
                     smarts_pattern = smarts[0]
         return smarts_pattern
-
 

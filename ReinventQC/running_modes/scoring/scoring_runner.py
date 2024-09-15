@@ -2,10 +2,10 @@ from reinvent_chemistry.file_reader import FileReader
 from reinvent_scoring.scoring.function.base_scoring_function import BaseScoringFunction
 from reinvent_scoring.scoring.score_summary import FinalSummary
 
-from running_modes.constructors.base_running_mode import BaseRunningMode
-from running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
-from running_modes.configurations.scoring.scoring_runner_configuration import ScoringRunnerConfiguration
-from running_modes.scoring.logging.scoring_logger import ScoringLogger
+from ReinventQC.running_modes.constructors.base_running_mode import BaseRunningMode
+from ReinventQC.running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
+from ReinventQC.running_modes.configurations.scoring.scoring_runner_configuration import ScoringRunnerConfiguration
+from ReinventQC.running_modes.scoring.logging.scoring_logger import ScoringLogger
 
 
 class ScoringRunner(BaseRunningMode):

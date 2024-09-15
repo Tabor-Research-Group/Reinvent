@@ -10,10 +10,10 @@ from reinvent_scoring.scoring.score_summary import FinalSummary
 
 import running_modes.utils.configuration as ull
 import running_modes.utils.general
-from running_modes.configurations import ReinforcementLoggerConfiguration
-from running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
-from running_modes.reinforcement_learning.logging.base_reinforcement_logger import BaseReinforcementLogger
-from running_modes.configurations.logging import get_remote_logging_auth_token
+from ReinventQC.running_modes.configurations import ReinforcementLoggerConfiguration
+from ReinventQC.running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
+from ReinventQC.running_modes.reinforcement_learning.logging.base_reinforcement_logger import BaseReinforcementLogger
+from ReinventQC.running_modes.configurations.logging import get_remote_logging_auth_token
 
 
 class RemoteReinforcementLogger(BaseReinforcementLogger):

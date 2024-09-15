@@ -1,8 +1,8 @@
 import os
 
-from running_modes.configurations import GeneralConfigurationEnvelope
-from running_modes.constructors.running_mode import RunningMode
-from running_modes.enums.running_mode_enum import RunningModeEnum
+from ReinventQC.running_modes.configurations import GeneralConfigurationEnvelope
+from ReinventQC.running_modes.constructors.running_mode import RunningMode
+from ReinventQC.running_modes.enums.running_mode_enum import RunningModeEnum
 
 
 class Manager:

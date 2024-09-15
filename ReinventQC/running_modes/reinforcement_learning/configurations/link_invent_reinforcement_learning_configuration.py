@@ -1,9 +1,9 @@
 from dataclasses import dataclass
 from typing import List
 
-from running_modes.reinforcement_learning.configurations.learning_strategy_configuration import \
+from ReinventQC.running_modes.reinforcement_learning.configurations.learning_strategy_configuration import \
     LearningStrategyConfiguration
-from running_modes.reinforcement_learning.configurations.link_invent_scoring_strategy_congfiguration import \
+from ReinventQC.running_modes.reinforcement_learning.configurations.link_invent_scoring_strategy_congfiguration import \
     LinkInventScoringStrategyConfiguration
 
 
@@ -18,4 +18,3 @@ class LinkInventReinforcementLearningConfiguration:
     learning_rate: float = 0.0001
     batch_size: int = 128
     randomize_warheads: bool = False
-

@@ -12,10 +12,10 @@ import reinvent_models.reinvent_core.models.dataset as reinvent_dataset
 import reinvent_models.reinvent_core.models.vocabulary as reinvent_vocabulary
 from reinvent_models.reinvent_core.models.model import Model
 
-from running_modes.constructors.base_running_mode import BaseRunningMode
-from running_modes.configurations.transfer_learning.transfer_learning_configuration import TransferLearningConfiguration
-from running_modes.transfer_learning.adaptive_learning_rate import AdaptiveLearningRate
-from running_modes.transfer_learning.logging.base_transfer_learning_logger import BaseTransferLearningLogger
+from ReinventQC.running_modes.constructors.base_running_mode import BaseRunningMode
+from ReinventQC.running_modes.configurations.transfer_learning.transfer_learning_configuration import TransferLearningConfiguration
+from ReinventQC.running_modes.transfer_learning.adaptive_learning_rate import AdaptiveLearningRate
+from ReinventQC.running_modes.transfer_learning.logging.base_transfer_learning_logger import BaseTransferLearningLogger
 
 rdkit.rdBase.DisableLog("rdApp.error")
 

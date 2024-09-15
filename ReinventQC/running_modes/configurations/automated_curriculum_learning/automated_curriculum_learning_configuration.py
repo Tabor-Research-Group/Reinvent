@@ -1,7 +1,7 @@
-from running_modes.configurations.automated_curriculum_learning.base_configuration import BaseConfiguration
-from running_modes.configurations.automated_curriculum_learning.curriculum_strategy_configuration import \
+from ReinventQC.running_modes.configurations.automated_curriculum_learning.base_configuration import BaseConfiguration
+from ReinventQC.running_modes.configurations.automated_curriculum_learning.curriculum_strategy_configuration import \
     CurriculumStrategyConfiguration
-from running_modes.configurations.automated_curriculum_learning.production_strategy_configuration import \
+from ReinventQC.running_modes.configurations.automated_curriculum_learning.production_strategy_configuration import \
     ProductionStrategyConfiguration
 
 

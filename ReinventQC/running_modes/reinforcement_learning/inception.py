@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 from typing import Tuple, List
 
-from running_modes.configurations.reinforcement_learning.inception_configuration import InceptionConfiguration
+from ReinventQC.running_modes.configurations.reinforcement_learning.inception_configuration import InceptionConfiguration
 from reinvent_chemistry.conversions import Conversions
 from rdkit.Chem.Scaffolds import MurckoScaffold
 

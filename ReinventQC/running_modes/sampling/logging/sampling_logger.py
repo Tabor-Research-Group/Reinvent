@@ -1,9 +1,9 @@
-from running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
-from running_modes.configurations.logging.sampling_log_configuration import SamplingLoggerConfiguration
-from running_modes.sampling.logging.base_sampling_logger import BaseSamplingLogger
-from running_modes.sampling.logging.local_sampling_logger import LocalSamplingLogger
-from running_modes.sampling.logging.remote_sampling_logger import RemoteSamplingLogger
-from running_modes.enums.logging_mode_enum import LoggingModeEnum
+from ReinventQC.running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
+from ReinventQC.running_modes.configurations.logging.sampling_log_configuration import SamplingLoggerConfiguration
+from ReinventQC.running_modes.sampling.logging.base_sampling_logger import BaseSamplingLogger
+from ReinventQC.running_modes.sampling.logging.local_sampling_logger import LocalSamplingLogger
+from ReinventQC.running_modes.sampling.logging.remote_sampling_logger import RemoteSamplingLogger
+from ReinventQC.running_modes.enums.logging_mode_enum import LoggingModeEnum
 
 
 class SamplingLogger:

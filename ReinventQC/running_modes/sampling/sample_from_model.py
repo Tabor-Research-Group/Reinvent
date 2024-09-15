@@ -4,10 +4,10 @@ import tqdm
 
 import reinvent_models.reinvent_core.models.model as reinvent
 
-from running_modes.constructors.base_running_mode import BaseRunningMode
-from running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
-from running_modes.configurations.compound_sampling.sample_from_model_configuration import SampleFromModelConfiguration
-from running_modes.sampling.logging.sampling_logger import SamplingLogger
+from ReinventQC.running_modes.constructors.base_running_mode import BaseRunningMode
+from ReinventQC.running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
+from ReinventQC.running_modes.configurations.compound_sampling.sample_from_model_configuration import SampleFromModelConfiguration
+from ReinventQC.running_modes.sampling.logging.sampling_logger import SamplingLogger
 
 
 class SampleFromModelRunner(BaseRunningMode):

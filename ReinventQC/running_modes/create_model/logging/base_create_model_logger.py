@@ -4,8 +4,8 @@ import logging
 from abc import ABC, abstractmethod
 from dacite import from_dict
 
-from running_modes.configurations import GeneralConfigurationEnvelope, CreateModelConfiguration
-from running_modes.configurations.logging.create_model_log_configuration import CreateModelLoggerConfiguration
+from ReinventQC.running_modes.configurations import GeneralConfigurationEnvelope, CreateModelConfiguration
+from ReinventQC.running_modes.configurations.logging.create_model_log_configuration import CreateModelLoggerConfiguration
 
 
 class BaseCreateModelLogger(ABC):
@@ -43,4 +43,3 @@ class BaseCreateModelLogger(ABC):
             logger.setLevel(level)
         logger.propagate = False
         return logger
-

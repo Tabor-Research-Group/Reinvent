@@ -4,8 +4,8 @@ from typing import List
 
 from torch.utils.tensorboard import SummaryWriter
 
-from running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
-from running_modes.transfer_learning.logging.base_transfer_learning_logger import BaseTransferLearningLogger
+from ReinventQC.running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
+from ReinventQC.running_modes.transfer_learning.logging.base_transfer_learning_logger import BaseTransferLearningLogger
 from reinvent_chemistry.logging import fraction_valid_smiles, add_mols
 
 

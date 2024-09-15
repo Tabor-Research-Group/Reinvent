@@ -9,8 +9,8 @@ from reinvent_chemistry.conversions import Conversions
 
 # from rdkit.Chem import inchi
 
-from running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
-from running_modes.configurations.logging.transfer_learning_log_configuration import TransferLearningLoggerConfig
+from ReinventQC.running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
+from ReinventQC.running_modes.configurations.logging.transfer_learning_log_configuration import TransferLearningLoggerConfig
 
 
 class BaseTransferLearningLogger(ABC):

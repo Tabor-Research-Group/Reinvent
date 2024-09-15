@@ -1,9 +1,9 @@
-from running_modes.automated_curriculum_learning.learning_strategy import DAPStrategy, MAULIStrategy, MASCOFStrategy, \
+from ReinventQC.running_modes.automated_curriculum_learning.learning_strategy import DAPStrategy, MAULIStrategy, MASCOFStrategy, \
     SDAPStrategy, DAPSingleQueryStrategy
-from running_modes.automated_curriculum_learning.learning_strategy.base_learning_strategy import BaseLearningStrategy
-from running_modes.automated_curriculum_learning.learning_strategy.learning_strategy_configuration import \
+from ReinventQC.running_modes.automated_curriculum_learning.learning_strategy.base_learning_strategy import BaseLearningStrategy
+from ReinventQC.running_modes.automated_curriculum_learning.learning_strategy.learning_strategy_configuration import \
     LearningStrategyConfiguration
-from running_modes.automated_curriculum_learning.learning_strategy.learning_strategy_enum import LearningStrategyEnum
+from ReinventQC.running_modes.automated_curriculum_learning.learning_strategy.learning_strategy_enum import LearningStrategyEnum
 
 
 class LearningStrategy:

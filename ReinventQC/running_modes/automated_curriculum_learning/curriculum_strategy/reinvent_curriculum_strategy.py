@@ -10,10 +10,10 @@ from reinvent_scoring.scoring.diversity_filters.curriculum_learning.update_diver
     UpdateDiversityFilterDTO
 from reinvent_scoring.scoring.function.base_scoring_function import BaseScoringFunction
 
-from running_modes.automated_curriculum_learning.actions.reinvent_sample_model import ReinventSampleModel
-from running_modes.automated_curriculum_learning.curriculum_strategy.base_curriculum_strategy import \
+from ReinventQC.running_modes.automated_curriculum_learning.actions.reinvent_sample_model import ReinventSampleModel
+from ReinventQC.running_modes.automated_curriculum_learning.curriculum_strategy.base_curriculum_strategy import \
     BaseCurriculumStrategy
-from running_modes.automated_curriculum_learning.dto import SampledBatchDTO, CurriculumOutcomeDTO, TimestepDTO
+from ReinventQC.running_modes.automated_curriculum_learning.dto import SampledBatchDTO, CurriculumOutcomeDTO, TimestepDTO
 
 
 class ReinventCurriculumStrategy(BaseCurriculumStrategy):

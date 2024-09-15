@@ -1,7 +1,7 @@
-from running_modes.configurations import GeneralConfigurationEnvelope, BaseLoggerConfiguration
-from running_modes.validation.logging.local_validation_logger import LocalValidationLogger
-from running_modes.validation.logging.remote_validation_logger import RemoteValidationLogger
-from running_modes.enums.logging_mode_enum import LoggingModeEnum
+from ReinventQC.running_modes.configurations import GeneralConfigurationEnvelope, BaseLoggerConfiguration
+from ReinventQC.running_modes.validation.logging.local_validation_logger import LocalValidationLogger
+from ReinventQC.running_modes.validation.logging.remote_validation_logger import RemoteValidationLogger
+from ReinventQC.running_modes.enums.logging_mode_enum import LoggingModeEnum
 
 
 class ValidationLogger:

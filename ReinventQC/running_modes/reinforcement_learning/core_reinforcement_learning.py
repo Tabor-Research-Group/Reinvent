@@ -12,12 +12,12 @@ from reinvent_scoring import FinalSummary
 from reinvent_scoring.scoring.diversity_filters.reinvent_core.base_diversity_filter import BaseDiversityFilter
 from reinvent_scoring.scoring.function.base_scoring_function import BaseScoringFunction
 
-from running_modes.configurations import ReinforcementLearningConfiguration
-from running_modes.constructors.base_running_mode import BaseRunningMode
-from running_modes.reinforcement_learning.inception import Inception
-from running_modes.reinforcement_learning.logging.base_reinforcement_logger import BaseReinforcementLogger
-from running_modes.reinforcement_learning.margin_guard import MarginGuard
-from running_modes.utils.general import to_tensor
+from ReinventQC.running_modes.configurations import ReinforcementLearningConfiguration
+from ReinventQC.running_modes.constructors.base_running_mode import BaseRunningMode
+from ReinventQC.running_modes.reinforcement_learning.inception import Inception
+from ReinventQC.running_modes.reinforcement_learning.logging.base_reinforcement_logger import BaseReinforcementLogger
+from ReinventQC.running_modes.reinforcement_learning.margin_guard import MarginGuard
+from ReinventQC.running_modes.utils.general import to_tensor
 
 
 class CoreReinforcementRunner(BaseRunningMode):

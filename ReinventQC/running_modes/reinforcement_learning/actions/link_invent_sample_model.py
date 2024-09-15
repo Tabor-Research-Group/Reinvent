@@ -8,8 +8,8 @@ from reinvent_chemistry.utils import get_indices_of_unique_smiles
 from reinvent_models.model_factory.generative_model_base import GenerativeModelBase
 from reinvent_models.link_invent.dataset.dataset import Dataset
 
-from running_modes.reinforcement_learning.actions import BaseAction
-from running_modes.reinforcement_learning.dto.sampled_sequences_dto import SampledSequencesDTO
+from ReinventQC.running_modes.reinforcement_learning.actions import BaseAction
+from ReinventQC.running_modes.reinforcement_learning.dto.sampled_sequences_dto import SampledSequencesDTO
 
 
 class LinkInventSampleModel(BaseAction):
@@ -71,4 +71,3 @@ class LinkInventSampleModel(BaseAction):
             warhead_pair_randomized = self._tokens.ATTACHMENT_SEPARATOR_TOKEN.join(warhead_randomized_list)
             randomized_warhead_pair_list.append(warhead_pair_randomized)
         return randomized_warhead_pair_list
-

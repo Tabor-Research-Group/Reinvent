@@ -1,6 +1,6 @@
-from running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
-from running_modes.scoring.logging.base_scoring_logger import BaseScoringLogger
-from running_modes.enums.scoring_runner_enum import ScoringRunnerEnum
+from ReinventQC.running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
+from ReinventQC.running_modes.scoring.logging.base_scoring_logger import BaseScoringLogger
+from ReinventQC.running_modes.enums.scoring_runner_enum import ScoringRunnerEnum
 
 
 class LocalScoringLogger(BaseScoringLogger):

@@ -1,9 +1,9 @@
 from dacite import from_dict
 
-from running_modes.constructors.base_running_mode import BaseRunningMode
-from running_modes.configurations import GeneralConfigurationEnvelope, SampleFromModelConfiguration
-from running_modes.sampling.sample_from_model import SampleFromModelRunner
-from running_modes.utils.general import set_default_device_cuda
+from ReinventQC.running_modes.constructors.base_running_mode import BaseRunningMode
+from ReinventQC.running_modes.configurations import GeneralConfigurationEnvelope, SampleFromModelConfiguration
+from ReinventQC.running_modes.sampling.sample_from_model import SampleFromModelRunner
+from ReinventQC.running_modes.utils.general import set_default_device_cuda
 
 
 class SamplingModeConstructor:

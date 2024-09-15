@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import List
 
-from running_modes.transfer_learning.dto.sampled_stats_dto import SampledStatsDTO
+from ReinventQC.running_modes.transfer_learning.dto.sampled_stats_dto import SampledStatsDTO
 
 
 @dataclass

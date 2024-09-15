@@ -4,7 +4,7 @@ from typing import Tuple
 import torch
 from reinvent_models.lib_invent.enums.generative_model_regime import GenerativeModelRegimeEnum
 
-from running_modes.automated_curriculum_learning.learning_strategy.learning_strategy_configuration import \
+from ReinventQC.running_modes.automated_curriculum_learning.learning_strategy.learning_strategy_configuration import \
     LearningStrategyConfiguration
 
 

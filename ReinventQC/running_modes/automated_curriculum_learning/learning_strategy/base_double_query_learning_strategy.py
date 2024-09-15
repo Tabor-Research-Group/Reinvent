@@ -2,9 +2,9 @@ from abc import abstractmethod
 
 from reinvent_models.link_invent.dto.batch_likelihood_dto import BatchLikelihoodDTO
 
-from running_modes.automated_curriculum_learning.dto import UpdatedLikelihoodsDTO
-from running_modes.automated_curriculum_learning.learning_strategy.base_learning_strategy import BaseLearningStrategy
-from running_modes.automated_curriculum_learning.learning_strategy.learning_strategy_configuration import \
+from ReinventQC.running_modes.automated_curriculum_learning.dto import UpdatedLikelihoodsDTO
+from ReinventQC.running_modes.automated_curriculum_learning.learning_strategy.base_learning_strategy import BaseLearningStrategy
+from ReinventQC.running_modes.automated_curriculum_learning.learning_strategy.learning_strategy_configuration import \
     LearningStrategyConfiguration
 
 

@@ -1,5 +1,5 @@
 import numpy as np
-from running_modes.automated_curriculum_learning.actions import BaseAction
+from ReinventQC.running_modes.automated_curriculum_learning.actions import BaseAction
 
 
 class BaseSampleAction(BaseAction):

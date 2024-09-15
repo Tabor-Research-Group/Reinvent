@@ -1,5 +1,5 @@
 import abc
-from running_modes.automated_curriculum_learning.logging.base_logger import BaseLogger
+from ReinventQC.running_modes.automated_curriculum_learning.logging.base_logger import BaseLogger
 
 
 class BaseAction(abc.ABC):

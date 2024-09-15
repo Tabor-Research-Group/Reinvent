@@ -7,18 +7,18 @@ from reinvent_models.model_factory.generative_model import GenerativeModel
 from reinvent_scoring.scoring import ScoringFunctionFactory
 from reinvent_scoring.scoring.diversity_filters.reinvent_core.diversity_filter import DiversityFilter
 
-from running_modes.configurations import GeneralConfigurationEnvelope, ReinforcementLearningComponents, \
+from ReinventQC.running_modes.configurations import GeneralConfigurationEnvelope, ReinforcementLearningComponents, \
     ReinforcementLoggerConfiguration
-from running_modes.constructors.base_running_mode import BaseRunningMode
-from running_modes.enums.model_type_enum import ModelTypeEnum
-from running_modes.reinforcement_learning import LibInventReinforcementLearning, LinkInventReinforcementLearning, \
+from ReinventQC.running_modes.constructors.base_running_mode import BaseRunningMode
+from ReinventQC.running_modes.enums.model_type_enum import ModelTypeEnum
+from ReinventQC.running_modes.reinforcement_learning import LibInventReinforcementLearning, LinkInventReinforcementLearning, \
     CoreReinforcementRunner, Inception
-from running_modes.reinforcement_learning.configurations import LinkInventReinforcementLearningConfiguration, \
+from ReinventQC.running_modes.reinforcement_learning.configurations import LinkInventReinforcementLearningConfiguration, \
     LibInventReinforcementLearningConfiguration
-from running_modes.reinforcement_learning.learning_strategy.learning_strategy import LearningStrategy
-from running_modes.reinforcement_learning.logging import ReinforcementLogger
-from running_modes.reinforcement_learning.scoring_strategy.scoring_strategy import ScoringStrategy
-from running_modes.utils.general import set_default_device_cuda
+from ReinventQC.running_modes.reinforcement_learning.learning_strategy.learning_strategy import LearningStrategy
+from ReinventQC.running_modes.reinforcement_learning.logging import ReinforcementLogger
+from ReinventQC.running_modes.reinforcement_learning.scoring_strategy.scoring_strategy import ScoringStrategy
+from ReinventQC.running_modes.utils.general import set_default_device_cuda
 
 
 class ReinforcementLearningModeConstructor:

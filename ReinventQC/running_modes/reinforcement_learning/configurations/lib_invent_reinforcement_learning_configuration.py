@@ -1,9 +1,9 @@
 from dataclasses import dataclass
 from typing import List
 
-from running_modes.reinforcement_learning.configurations.learning_strategy_configuration import \
+from ReinventQC.running_modes.reinforcement_learning.configurations.learning_strategy_configuration import \
     LearningStrategyConfiguration
-from running_modes.reinforcement_learning.configurations.lib_invent_scoring_strategy_configuration import \
+from ReinventQC.running_modes.reinforcement_learning.configurations.lib_invent_scoring_strategy_configuration import \
     LibInventScoringStrategyConfiguration
 
 

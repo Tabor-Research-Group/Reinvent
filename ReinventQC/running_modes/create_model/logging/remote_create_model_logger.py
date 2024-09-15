@@ -1,7 +1,7 @@
 import requests
 
-from running_modes.create_model.logging.base_create_model_logger import BaseCreateModelLogger
-from running_modes.configurations.logging import get_remote_logging_auth_token
+from ReinventQC.running_modes.create_model.logging.base_create_model_logger import BaseCreateModelLogger
+from ReinventQC.running_modes.configurations.logging import get_remote_logging_auth_token
 
 
 class RemoteCreateModelLogger(BaseCreateModelLogger):

@@ -9,10 +9,10 @@ import scipy.stats as sps
 from reinvent_models.model_factory.generative_model_base import GenerativeModelBase
 from reinvent_models.link_invent.dto import SampledSequencesDTO
 
-from running_modes.transfer_learning.dto.collected_stats_dto import CollectedStatsDTO
-from running_modes.transfer_learning.dto.sampled_stats_dto import SampledStatsDTO
-from running_modes.transfer_learning.link_invent_actions.base_action import BaseAction
-from running_modes.transfer_learning.logging.base_transfer_learning_logger import BaseTransferLearningLogger
+from ReinventQC.running_modes.transfer_learning.dto.collected_stats_dto import CollectedStatsDTO
+from ReinventQC.running_modes.transfer_learning.dto.sampled_stats_dto import SampledStatsDTO
+from ReinventQC.running_modes.transfer_learning.link_invent_actions.base_action import BaseAction
+from ReinventQC.running_modes.transfer_learning.logging.base_transfer_learning_logger import BaseTransferLearningLogger
 
 
 class CollectStats(BaseAction):
@@ -109,4 +109,3 @@ class CollectStats(BaseAction):
                                        molecule_parts_smiles=molecule_parts_smiles_list,
                                        valid_fraction=len(molecule_smiles_list) / len(nll_list) * 100)
         return sample_stats
-

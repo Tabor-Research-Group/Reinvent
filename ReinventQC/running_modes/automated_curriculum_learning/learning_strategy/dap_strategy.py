@@ -1,10 +1,10 @@
 import torch
 from reinvent_models.link_invent.dto import BatchLikelihoodDTO
 
-from running_modes.automated_curriculum_learning.dto import UpdatedLikelihoodsDTO
-from running_modes.automated_curriculum_learning.learning_strategy.base_double_query_learning_strategy import \
+from ReinventQC.running_modes.automated_curriculum_learning.dto import UpdatedLikelihoodsDTO
+from ReinventQC.running_modes.automated_curriculum_learning.learning_strategy.base_double_query_learning_strategy import \
     BaseDoubleQueryLearningStrategy
-from running_modes.automated_curriculum_learning.learning_strategy.learning_strategy_configuration import \
+from ReinventQC.running_modes.automated_curriculum_learning.learning_strategy.learning_strategy_configuration import \
     LearningStrategyConfiguration
 
 
@@ -28,6 +28,5 @@ class DAPStrategy(BaseDoubleQueryLearningStrategy):
         loss = loss.mean()
         dto = UpdatedLikelihoodsDTO(negative_actor_nlls, negative_critic_nlls, augmented_nlls, loss)
         return dto
-
 
 

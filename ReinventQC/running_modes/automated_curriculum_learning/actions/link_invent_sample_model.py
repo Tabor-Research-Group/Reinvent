@@ -7,8 +7,8 @@ from reinvent_models.link_invent.dataset.dataset import Dataset
 from reinvent_models.model_factory.generative_model_base import GenerativeModelBase
 from torch.utils.data import DataLoader
 
-from running_modes.automated_curriculum_learning.actions import BaseSampleAction
-from running_modes.automated_curriculum_learning.dto.sampled_sequences_dto import SampledSequencesDTO
+from ReinventQC.running_modes.automated_curriculum_learning.actions import BaseSampleAction
+from ReinventQC.running_modes.automated_curriculum_learning.dto.sampled_sequences_dto import SampledSequencesDTO
 
 
 class LinkInventSampleModel(BaseSampleAction):

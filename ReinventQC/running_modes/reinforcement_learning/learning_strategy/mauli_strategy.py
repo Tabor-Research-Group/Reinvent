@@ -1,5 +1,5 @@
-from running_modes.reinforcement_learning.configurations.learning_strategy_configuration import LearningStrategyConfiguration
-from running_modes.reinforcement_learning.learning_strategy import BaseLearningStrategy
+from ReinventQC.running_modes.reinforcement_learning.configurations.learning_strategy_configuration import LearningStrategyConfiguration
+from ReinventQC.running_modes.reinforcement_learning.learning_strategy import BaseLearningStrategy
 
 
 class MAULIStrategy(BaseLearningStrategy):

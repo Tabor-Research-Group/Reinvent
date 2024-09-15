@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-from running_modes.transfer_learning.logging.base_transfer_learning_logger import BaseTransferLearningLogger
+from ReinventQC.running_modes.transfer_learning.logging.base_transfer_learning_logger import BaseTransferLearningLogger
 
 
 class BaseAction(ABC):

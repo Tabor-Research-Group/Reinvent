@@ -1,9 +1,9 @@
 import numpy as np
 import torch
 
-from running_modes.automated_curriculum_learning.learning_strategy.base_single_query_learning_strategy import \
+from ReinventQC.running_modes.automated_curriculum_learning.learning_strategy.base_single_query_learning_strategy import \
     BaseSingleQueryLearningStrategy
-from running_modes.automated_curriculum_learning.learning_strategy.learning_strategy_configuration import \
+from ReinventQC.running_modes.automated_curriculum_learning.learning_strategy.learning_strategy_configuration import \
     LearningStrategyConfiguration
 
 

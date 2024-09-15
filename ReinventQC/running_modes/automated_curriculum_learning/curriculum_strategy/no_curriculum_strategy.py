@@ -2,9 +2,9 @@ from reinvent_models.model_factory.generative_model_base import GenerativeModelB
 from reinvent_scoring.scoring.diversity_filters.curriculum_learning.diversity_filter import DiversityFilter
 from reinvent_scoring.scoring.function.base_scoring_function import BaseScoringFunction
 
-from running_modes.automated_curriculum_learning.curriculum_strategy.base_curriculum_strategy import \
+from ReinventQC.running_modes.automated_curriculum_learning.curriculum_strategy.base_curriculum_strategy import \
     BaseCurriculumStrategy
-from running_modes.automated_curriculum_learning.dto import CurriculumOutcomeDTO
+from ReinventQC.running_modes.automated_curriculum_learning.dto import CurriculumOutcomeDTO
 
 
 class NoCurriculumStrategy(BaseCurriculumStrategy):

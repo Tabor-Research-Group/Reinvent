@@ -8,10 +8,10 @@ from reinvent_scoring.scoring.enums import ComponentSpecificParametersEnum, Scor
 from reinvent_scoring.scoring.score_summary import FinalSummary
 from torch.utils.tensorboard import SummaryWriter
 
-from running_modes.automated_curriculum_learning.dto.timestep_dto import TimestepDTO
-from running_modes.automated_curriculum_learning.logging.base_logger import BaseLogger
-from running_modes.automated_curriculum_learning.logging.console_message import ConsoleMessage
-from running_modes.configurations import GeneralConfigurationEnvelope, CurriculumLoggerConfiguration
+from ReinventQC.running_modes.automated_curriculum_learning.dto.timestep_dto import TimestepDTO
+from ReinventQC.running_modes.automated_curriculum_learning.logging.base_logger import BaseLogger
+from ReinventQC.running_modes.automated_curriculum_learning.logging.console_message import ConsoleMessage
+from ReinventQC.running_modes.configurations import GeneralConfigurationEnvelope, CurriculumLoggerConfiguration
 
 
 class LocalLogger(BaseLogger):

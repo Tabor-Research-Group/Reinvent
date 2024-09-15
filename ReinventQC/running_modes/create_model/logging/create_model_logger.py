@@ -1,8 +1,8 @@
-from running_modes.configurations import GeneralConfigurationEnvelope, ReinforcementLoggerConfiguration
-from running_modes.create_model.logging.base_create_model_logger import BaseCreateModelLogger
-from running_modes.create_model.logging.local_create_model_logger import LocalCreateModelLogger
-from running_modes.create_model.logging.remote_create_model_logger import RemoteCreateModelLogger
-from running_modes.enums.logging_mode_enum import LoggingModeEnum
+from ReinventQC.running_modes.configurations import GeneralConfigurationEnvelope, ReinforcementLoggerConfiguration
+from ReinventQC.running_modes.create_model.logging.base_create_model_logger import BaseCreateModelLogger
+from ReinventQC.running_modes.create_model.logging.local_create_model_logger import LocalCreateModelLogger
+from ReinventQC.running_modes.create_model.logging.remote_create_model_logger import RemoteCreateModelLogger
+from ReinventQC.running_modes.enums.logging_mode_enum import LoggingModeEnum
 
 
 class CreateModelLogger:

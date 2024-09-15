@@ -1,4 +1,4 @@
-from running_modes.configurations.automated_curriculum_learning.base_configuration import BaseConfiguration
+from ReinventQC.running_modes.configurations.automated_curriculum_learning.base_configuration import BaseConfiguration
 
 
 class CurriculumLearningComponents(BaseConfiguration):

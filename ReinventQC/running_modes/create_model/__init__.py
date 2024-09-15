@@ -1,2 +1,2 @@
-from running_modes.create_model.create_model import CreateModelRunner
-from running_modes.create_model.link_invent_create_model import LinkInventCreateModelRunner
+from ReinventQC.running_modes.create_model.create_model import CreateModelRunner
+from ReinventQC.running_modes.create_model.link_invent_create_model import LinkInventCreateModelRunner

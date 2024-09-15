@@ -6,10 +6,10 @@ from reinvent_scoring import FinalSummary, ScoringFunctionComponentNameEnum, Log
     ComponentSummary
 from reinvent_scoring.scoring.diversity_filters.lib_invent.base_diversity_filter import BaseDiversityFilter
 
-from running_modes.reinforcement_learning.configurations.lib_invent_scoring_strategy_configuration import \
+from ReinventQC.running_modes.reinforcement_learning.configurations.lib_invent_scoring_strategy_configuration import \
     LibInventScoringStrategyConfiguration
-from running_modes.reinforcement_learning.dto.sampled_sequences_dto import SampledSequencesDTO
-from running_modes.reinforcement_learning.scoring_strategy.base_scoring_strategy import BaseScoringStrategy
+from ReinventQC.running_modes.reinforcement_learning.dto.sampled_sequences_dto import SampledSequencesDTO
+from ReinventQC.running_modes.reinforcement_learning.scoring_strategy.base_scoring_strategy import BaseScoringStrategy
 
 
 class LibInventScoringStrategy(BaseScoringStrategy):

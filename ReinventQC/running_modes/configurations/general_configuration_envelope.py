@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from running_modes.enums.model_type_enum import ModelTypeEnum
+from ReinventQC.running_modes.enums.model_type_enum import ModelTypeEnum
 
 
 @dataclass
@@ -10,4 +10,3 @@ class GeneralConfigurationEnvelope:
     run_type: str
     version: str
     model_type: str = ModelTypeEnum().DEFAULT
-

@@ -2,7 +2,7 @@ from dataclasses import dataclass, field
 
 from typing import List, Optional
 
-from running_modes.configurations.transfer_learning.adaptive_learning_rate_configuration import AdaptiveLearningRateConfiguration
+from ReinventQC.running_modes.configurations.transfer_learning.adaptive_learning_rate_configuration import AdaptiveLearningRateConfiguration
 
 
 @dataclass

@@ -1,9 +1,9 @@
-from running_modes.configurations import GeneralConfigurationEnvelope, ReinforcementLoggerConfiguration
-from running_modes.enums.logging_mode_enum import LoggingModeEnum
-from running_modes.reinforcement_learning.logging.link_logging.base_reinforcement_logger import BaseReinforcementLogger
-from running_modes.reinforcement_learning.logging.link_logging.local_bond_link_reinforcement_logger import \
+from ReinventQC.running_modes.configurations import GeneralConfigurationEnvelope, ReinforcementLoggerConfiguration
+from ReinventQC.running_modes.enums.logging_mode_enum import LoggingModeEnum
+from ReinventQC.running_modes.reinforcement_learning.logging.link_logging.base_reinforcement_logger import BaseReinforcementLogger
+from ReinventQC.running_modes.reinforcement_learning.logging.link_logging.local_bond_link_reinforcement_logger import \
     LocalBondLinkReinforcementLogger
-from running_modes.reinforcement_learning.logging.link_logging.remote_bond_link_reinforcement_logger import \
+from ReinventQC.running_modes.reinforcement_learning.logging.link_logging.remote_bond_link_reinforcement_logger import \
     RemoteLinkReinforcementLogger
 
 

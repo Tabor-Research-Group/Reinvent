@@ -6,8 +6,8 @@ from abc import ABC, abstractmethod
 import numpy as np
 from rdkit.Chem import inchi
 from reinvent_chemistry.conversions import Conversions
-from running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
-from running_modes.configurations.logging.sampling_log_configuration import SamplingLoggerConfiguration
+from ReinventQC.running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
+from ReinventQC.running_modes.configurations.logging.sampling_log_configuration import SamplingLoggerConfiguration
 
 
 class BaseSamplingLogger(ABC):
