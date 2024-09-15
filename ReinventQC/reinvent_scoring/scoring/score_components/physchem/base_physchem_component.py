@@ -2,11 +2,11 @@ from abc import abstractmethod
 from typing import List
 
 import numpy as np
-from reinvent_chemistry.phys_chem_descriptors import PhysChemDescriptors
+from ReinventQC.reinvent_chemistry.phys_chem_descriptors import PhysChemDescriptors
 
-from reinvent_scoring.scoring.component_parameters import ComponentParameters
-from reinvent_scoring.scoring.score_components import BaseScoreComponent
-from reinvent_scoring.scoring.score_summary import ComponentSummary
+from ReinventQC.reinvent_scoring.scoring.component_parameters import ComponentParameters
+from ReinventQC.reinvent_scoring.scoring.score_components import BaseScoreComponent
+from ReinventQC.reinvent_scoring.scoring.score_summary import ComponentSummary
 
 
 class BasePhysChemComponent(BaseScoreComponent):
@@ -36,4 +36,3 @@ class BasePhysChemComponent(BaseScoreComponent):
     @abstractmethod
     def _calculate_phys_chem_property(self, mol):
         raise NotImplementedError("_calculate_phys_chem_property method is not implemented")
-

@@ -1,5 +1,5 @@
-from reinvent_scoring.scoring.component_parameters import ComponentParameters
-from reinvent_scoring.scoring.score_components.pip.base_pip_model_component import BasePiPModelComponent
+from ReinventQC.reinvent_scoring.scoring.component_parameters import ComponentParameters
+from ReinventQC.reinvent_scoring.scoring.score_components.pip.base_pip_model_component import BasePiPModelComponent
 
 
 class RatPKPiP(BasePiPModelComponent):

@@ -4,10 +4,10 @@ from typing import List
 import numpy as np
 from rdkit import Chem
 from rdkit.Chem.Scaffolds import MurckoScaffold
-# from reinvent_scoring.scoring.score_summary import FinalSummary
+# from ReinventQC.reinvent_scoring.scoring.score_summary import FinalSummary
 
-from reinvent_scoring.scoring.diversity_filters.lib_invent.base_diversity_filter import BaseDiversityFilter
-from reinvent_scoring.scoring.diversity_filters.lib_invent.diversity_filter_parameters import DiversityFilterParameters
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.lib_invent.base_diversity_filter import BaseDiversityFilter
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.lib_invent.diversity_filter_parameters import DiversityFilterParameters
 
 
 class IdenticalMurckoScaffold(BaseDiversityFilter):

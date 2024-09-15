@@ -1,11 +1,11 @@
-from reinvent_chemistry.conversions import Conversions
+from ReinventQC.reinvent_chemistry.conversions import Conversions
 
 from ReinventQC.running_modes.constructors.base_running_mode import BaseRunningMode
 from ReinventQC.running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
 from ReinventQC.running_modes.validation.logging.validation_logger import ValidationLogger
 
-from reinvent_scoring.scoring.component_parameters import ComponentParameters
-from reinvent_scoring.scoring.score_components import PredictivePropertyComponent
+from ReinventQC.reinvent_scoring.scoring.component_parameters import ComponentParameters
+from ReinventQC.reinvent_scoring.scoring.score_components import PredictivePropertyComponent
 
 
 class ValidationRunner(BaseRunningMode):

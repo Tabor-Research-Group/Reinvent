@@ -1,6 +1,6 @@
-from reinvent_scoring.scoring.diversity_filters.lib_invent import NoFilter, NoFilterWithPenalty, IdenticalMurckoScaffold
-from reinvent_scoring.scoring.diversity_filters.lib_invent.base_diversity_filter import BaseDiversityFilter
-from reinvent_scoring.scoring.diversity_filters.lib_invent.diversity_filter_parameters import DiversityFilterParameters
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.lib_invent import NoFilter, NoFilterWithPenalty, IdenticalMurckoScaffold
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.lib_invent.base_diversity_filter import BaseDiversityFilter
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.lib_invent.diversity_filter_parameters import DiversityFilterParameters
 
 
 class DiversityFilter:

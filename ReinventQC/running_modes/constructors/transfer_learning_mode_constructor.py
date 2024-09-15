@@ -1,9 +1,9 @@
 import torch
-from reinvent_models.model_factory.configurations.model_configuration import ModelConfiguration
-from reinvent_models.model_factory.enums.model_mode_enum import ModelModeEnum
-from reinvent_models.model_factory.enums.model_type_enum import ModelTypeEnum
-from reinvent_models.model_factory.generative_model import GenerativeModel
-from reinvent_models.reinvent_core.models.model import Model
+from ReinventQC.reinvent_models.model_factory.configurations.model_configuration import ModelConfiguration
+from ReinventQC.reinvent_models.model_factory.enums.model_mode_enum import ModelModeEnum
+from ReinventQC.reinvent_models.model_factory.enums.model_type_enum import ModelTypeEnum
+from ReinventQC.reinvent_models.model_factory.generative_model import GenerativeModel
+from ReinventQC.reinvent_models.reinvent_core.models.model import Model
 
 from ReinventQC.running_modes.configurations.transfer_learning.link_invent_transfer_learning_configuration import \
     LinkInventTransferLearningConfiguration

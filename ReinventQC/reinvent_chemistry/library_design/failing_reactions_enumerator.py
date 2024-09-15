@@ -3,10 +3,10 @@ from typing import List, Tuple
 
 from rdkit.Chem.rdchem import Mol
 
-from reinvent_chemistry import TransformationTokens, Conversions
-from reinvent_chemistry.library_design.dtos import ReactionDTO, FailedReactionDTO
-from reinvent_chemistry.library_design.fragment_reactions import FragmentReactions
-from reinvent_chemistry.library_design.fragmented_molecule import FragmentedMolecule
+from ReinventQC.reinvent_chemistry import TransformationTokens, Conversions
+from ReinventQC.reinvent_chemistry.library_design.dtos import ReactionDTO, FailedReactionDTO
+from ReinventQC.reinvent_chemistry.library_design.fragment_reactions import FragmentReactions
+from ReinventQC.reinvent_chemistry.library_design.fragmented_molecule import FragmentedMolecule
 
 
 class FailingReactionsEnumerator:

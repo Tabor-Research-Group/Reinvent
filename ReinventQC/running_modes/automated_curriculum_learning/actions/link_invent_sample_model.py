@@ -1,10 +1,10 @@
 from typing import List
 
 import numpy as np
-from reinvent_chemistry import Conversions, TransformationTokens
-from reinvent_chemistry.library_design import BondMaker, AttachmentPoints
-from reinvent_models.link_invent.dataset.dataset import Dataset
-from reinvent_models.model_factory.generative_model_base import GenerativeModelBase
+from ReinventQC.reinvent_chemistry import Conversions, TransformationTokens
+from ReinventQC.reinvent_chemistry.library_design import BondMaker, AttachmentPoints
+from ReinventQC.reinvent_models.link_invent.dataset.dataset import Dataset
+from ReinventQC.reinvent_models.model_factory.generative_model_base import GenerativeModelBase
 from torch.utils.data import DataLoader
 
 from ReinventQC.running_modes.automated_curriculum_learning.actions import BaseSampleAction

@@ -1,8 +1,8 @@
 from typing import List
 
 import pandas as pd
-from reinvent_scoring.scoring.score_summary import ComponentSummary
-from reinvent_scoring.scoring.enums.scoring_function_component_enum import ScoringFunctionComponentNameEnum
+from ReinventQC.reinvent_scoring.scoring.score_summary import ComponentSummary
+from ReinventQC.reinvent_scoring.scoring.enums.scoring_function_component_enum import ScoringFunctionComponentNameEnum
 
 
 class DiversityFilterMemory:

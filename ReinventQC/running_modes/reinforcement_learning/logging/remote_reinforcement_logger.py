@@ -1,15 +1,15 @@
 import os
 
 import numpy as np
-import reinvent_chemistry.logging as ul_rl
+import ReinventQC.reinvent_chemistry.logging as ul_rl
 import requests
 import torch
-from reinvent_scoring.scoring.diversity_filters.reinvent_core.base_diversity_filter import BaseDiversityFilter
-from reinvent_scoring.scoring.enums.scoring_function_component_enum import ScoringFunctionComponentNameEnum
-from reinvent_scoring.scoring.score_summary import FinalSummary
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.reinvent_core.base_diversity_filter import BaseDiversityFilter
+from ReinventQC.reinvent_scoring.scoring.enums.scoring_function_component_enum import ScoringFunctionComponentNameEnum
+from ReinventQC.reinvent_scoring.scoring.score_summary import FinalSummary
 
-import running_modes.utils.configuration as ull
-import running_modes.utils.general
+import ReinventQC.running_modes.utils.configuration as ull
+import ReinventQC.running_modes.utils.general
 from ReinventQC.running_modes.configurations import ReinforcementLoggerConfiguration
 from ReinventQC.running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
 from ReinventQC.running_modes.reinforcement_learning.logging.base_reinforcement_logger import BaseReinforcementLogger

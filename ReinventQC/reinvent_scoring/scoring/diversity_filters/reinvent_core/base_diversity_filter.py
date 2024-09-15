@@ -4,10 +4,10 @@ from typing import List
 import numpy as np
 import pandas as pd
 
-from reinvent_scoring.scoring.diversity_filters.reinvent_core.diversity_filter_memory import DiversityFilterMemory
-from reinvent_scoring.scoring.diversity_filters.reinvent_core.diversity_filter_parameters import DiversityFilterParameters
-from reinvent_scoring.scoring.score_summary import FinalSummary, ComponentSummary
-from reinvent_chemistry.conversions import Conversions
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.reinvent_core.diversity_filter_memory import DiversityFilterMemory
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.reinvent_core.diversity_filter_parameters import DiversityFilterParameters
+from ReinventQC.reinvent_scoring.scoring.score_summary import FinalSummary, ComponentSummary
+from ReinventQC.reinvent_chemistry.conversions import Conversions
 
 
 class BaseDiversityFilter(abc.ABC):

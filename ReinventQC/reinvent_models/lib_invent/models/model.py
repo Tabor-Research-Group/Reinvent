@@ -6,9 +6,9 @@ import torch
 import torch.nn as tnn
 
 
-from reinvent_models.lib_invent.enums.generative_model_regime import GenerativeModelRegimeEnum
-from reinvent_models.lib_invent.models.decorator import Decorator
-from reinvent_models.model_factory.enums.model_mode_enum import ModelModeEnum
+from ReinventQC.reinvent_models.lib_invent.enums.generative_model_regime import GenerativeModelRegimeEnum
+from ReinventQC.reinvent_models.lib_invent.models.decorator import Decorator
+from ReinventQC.reinvent_models.model_factory.enums.model_mode_enum import ModelModeEnum
 
 
 class DecoratorModel:

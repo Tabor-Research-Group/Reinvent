@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 from typing import List
 
-from reinvent_scoring import ScoringFunctionParameters
-from reinvent_scoring.scoring.diversity_filters.curriculum_learning import DiversityFilterParameters
+from ReinventQC.reinvent_scoring import ScoringFunctionParameters
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.curriculum_learning import DiversityFilterParameters
 
 from ReinventQC.running_modes.configurations import InceptionConfiguration
 from ReinventQC.running_modes.reinforcement_learning.configurations.learning_strategy_configuration import \

@@ -1,10 +1,10 @@
 import numpy as np
 from typing import List
 
-from reinvent_scoring.scoring.utils import _is_development_environment
+from ReinventQC.reinvent_scoring.scoring.utils import _is_development_environment
 
-from reinvent_scoring.scoring.component_parameters import ComponentParameters
-from reinvent_scoring.scoring.score_components.structural.base_structural_component import BaseStructuralComponent
+from ReinventQC.reinvent_scoring.scoring.component_parameters import ComponentParameters
+from ReinventQC.reinvent_scoring.scoring.score_components.structural.base_structural_component import BaseStructuralComponent
 
 
 class DockStream(BaseStructuralComponent):

@@ -2,9 +2,9 @@ from copy import deepcopy
 
 import numpy as np
 
-from reinvent_scoring.scoring.diversity_filters.reinvent_core.base_diversity_filter import BaseDiversityFilter
-from reinvent_scoring.scoring.diversity_filters.reinvent_core.diversity_filter_parameters import DiversityFilterParameters
-from reinvent_scoring.scoring.score_summary import FinalSummary
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.reinvent_core.base_diversity_filter import BaseDiversityFilter
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.reinvent_core.diversity_filter_parameters import DiversityFilterParameters
+from ReinventQC.reinvent_scoring.scoring.score_summary import FinalSummary
 
 
 class NoScaffoldFilter(BaseDiversityFilter):

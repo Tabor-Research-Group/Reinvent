@@ -2,8 +2,8 @@ from typing import List, Dict
 
 import numpy as np
 
-from reinvent_chemistry.descriptors import Descriptors
-from reinvent_scoring.scoring.predictive_model.base_model_container import BaseModelContainer
+from ReinventQC.reinvent_chemistry.descriptors import Descriptors
+from ReinventQC.reinvent_scoring.scoring.predictive_model.base_model_container import BaseModelContainer
 
 
 class ScikitModelContainer(BaseModelContainer):

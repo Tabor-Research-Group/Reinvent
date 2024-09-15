@@ -3,7 +3,7 @@ from dataclasses import dataclass
 import numpy as np
 from typing import List
 
-from reinvent_scoring.scoring.component_parameters import ComponentParameters
+from ReinventQC.reinvent_scoring.scoring.component_parameters import ComponentParameters
 
 
 @dataclass

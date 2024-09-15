@@ -3,7 +3,7 @@ import pandas as pd
 from typing import Tuple, List
 
 from ReinventQC.running_modes.configurations.reinforcement_learning.inception_configuration import InceptionConfiguration
-from reinvent_chemistry.conversions import Conversions
+from ReinventQC.reinvent_chemistry.conversions import Conversions
 from rdkit.Chem.Scaffolds import MurckoScaffold
 
 

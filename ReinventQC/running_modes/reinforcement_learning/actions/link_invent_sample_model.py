@@ -2,11 +2,11 @@ from typing import List
 
 import numpy as np
 import torch.utils.data as tud
-from reinvent_chemistry import Conversions, TransformationTokens
-from reinvent_chemistry.library_design import BondMaker, AttachmentPoints
-from reinvent_chemistry.utils import get_indices_of_unique_smiles
-from reinvent_models.model_factory.generative_model_base import GenerativeModelBase
-from reinvent_models.link_invent.dataset.dataset import Dataset
+from ReinventQC.reinvent_chemistry import Conversions, TransformationTokens
+from ReinventQC.reinvent_chemistry.library_design import BondMaker, AttachmentPoints
+from ReinventQC.reinvent_chemistry.utils import get_indices_of_unique_smiles
+from ReinventQC.reinvent_models.model_factory.generative_model_base import GenerativeModelBase
+from ReinventQC.reinvent_models.link_invent.dataset.dataset import Dataset
 
 from ReinventQC.running_modes.reinforcement_learning.actions import BaseAction
 from ReinventQC.running_modes.reinforcement_learning.dto.sampled_sequences_dto import SampledSequencesDTO

@@ -4,15 +4,15 @@ import numpy as np
 import torch
 from torch.utils.tensorboard import SummaryWriter
 
-import reinvent_chemistry.logging as ul_rl
-from reinvent_scoring.scoring.diversity_filters.reinvent_core.base_diversity_filter import BaseDiversityFilter
+import ReinventQC.reinvent_chemistry.logging as ul_rl
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.reinvent_core.base_diversity_filter import BaseDiversityFilter
 
 from ReinventQC.running_modes.configurations import ReinforcementLoggerConfiguration
 from ReinventQC.running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
 from ReinventQC.running_modes.reinforcement_learning.logging import ConsoleMessage
 from ReinventQC.running_modes.reinforcement_learning.logging.base_reinforcement_logger import BaseReinforcementLogger
-from reinvent_scoring.scoring.score_summary import FinalSummary
-from reinvent_scoring.scoring.enums.scoring_function_component_enum import ScoringFunctionComponentNameEnum
+from ReinventQC.reinvent_scoring.scoring.score_summary import FinalSummary
+from ReinventQC.reinvent_scoring.scoring.enums.scoring_function_component_enum import ScoringFunctionComponentNameEnum
 
 
 class LocalReinforcementLogger(BaseReinforcementLogger):

@@ -1,6 +1,6 @@
-from reinvent_models.model_factory.generative_model_base import GenerativeModelBase
-from reinvent_scoring import ScoringFunctionFactory
-from reinvent_scoring.scoring.diversity_filters.curriculum_learning.diversity_filter import DiversityFilter
+from ReinventQC.reinvent_models.model_factory.generative_model_base import GenerativeModelBase
+from ReinventQC.reinvent_scoring import ScoringFunctionFactory
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.curriculum_learning.diversity_filter import DiversityFilter
 
 from ReinventQC.running_modes.automated_curriculum_learning.curriculum_strategy.base_curriculum_strategy import \
     BaseCurriculumStrategy

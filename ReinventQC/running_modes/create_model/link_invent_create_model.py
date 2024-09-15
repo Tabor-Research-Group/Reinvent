@@ -1,13 +1,13 @@
 import os
 
-from reinvent_chemistry.file_reader import FileReader
-from reinvent_models.link_invent.link_invent_model import LinkInventModel
-from reinvent_models.link_invent.model_vocabulary.paired_model_vocabulary import PairedModelVocabulary
-from reinvent_models.link_invent.networks import EncoderDecoder
+from ReinventQC.reinvent_chemistry.file_reader import FileReader
+from ReinventQC.reinvent_models.link_invent.link_invent_model import LinkInventModel
+from ReinventQC.reinvent_models.link_invent.model_vocabulary.paired_model_vocabulary import PairedModelVocabulary
+from ReinventQC.reinvent_models.link_invent.networks import EncoderDecoder
 
 from ReinventQC.running_modes.configurations import LinkInventCreateModelConfiguration
 from ReinventQC.running_modes.create_model.logging.base_create_model_logger import BaseCreateModelLogger
-from reinvent_models.model_factory.enums.model_parameter_enum import ModelParametersEnum
+from ReinventQC.reinvent_models.model_factory.enums.model_parameter_enum import ModelParametersEnum
 
 
 class LinkInventCreateModelRunner:

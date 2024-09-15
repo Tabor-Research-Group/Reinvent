@@ -5,12 +5,12 @@ import numpy as np
 from rdkit.Chem import Mol
 from rdkit.Chem.Descriptors import ExactMolWt
 
-from reinvent_chemistry import Descriptors
+from ReinventQC.reinvent_chemistry import Descriptors
 
-from reinvent_scoring.scoring.component_parameters import ComponentParameters
-from reinvent_scoring.scoring.score_components import BaseScoreComponent
-from reinvent_scoring.scoring.score_components.synthetic_accessibility.sascorer import calculateScore
-from reinvent_scoring.scoring.score_summary import ComponentSummary
+from ReinventQC.reinvent_scoring.scoring.component_parameters import ComponentParameters
+from ReinventQC.reinvent_scoring.scoring.score_components import BaseScoreComponent
+from ReinventQC.reinvent_scoring.scoring.score_components.synthetic_accessibility.sascorer import calculateScore
+from ReinventQC.reinvent_scoring.scoring.score_summary import ComponentSummary
 
 
 class SASComponent(BaseScoreComponent):

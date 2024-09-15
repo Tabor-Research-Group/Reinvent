@@ -1,10 +1,10 @@
 from rdkit.Chem import Mol, GetDistanceMatrix, rdMolDescriptors, rdchem, Descriptors
 
-from reinvent_chemistry import Conversions, TransformationTokens
-from reinvent_chemistry.link_invent.bond_breaker import BondBreaker
+from ReinventQC.reinvent_chemistry import Conversions, TransformationTokens
+from ReinventQC.reinvent_chemistry.link_invent.bond_breaker import BondBreaker
 
-from reinvent_chemistry.library_design.attachment_points import AttachmentPoints
-from reinvent_chemistry.link_invent.attachment_point_modifier import AttachmentPointModifier
+from ReinventQC.reinvent_chemistry.library_design.attachment_points import AttachmentPoints
+from ReinventQC.reinvent_chemistry.link_invent.attachment_point_modifier import AttachmentPointModifier
 
 
 class LinkerDescriptors:

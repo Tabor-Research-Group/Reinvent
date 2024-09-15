@@ -1,8 +1,8 @@
 from typing import Tuple, Any
 
 import numpy as np
-from reinvent_chemistry import Conversions
-from reinvent_models.model_factory.generative_model_base import GenerativeModelBase
+from ReinventQC.reinvent_chemistry import Conversions
+from ReinventQC.reinvent_models.model_factory.generative_model_base import GenerativeModelBase
 
 from ReinventQC.running_modes.automated_curriculum_learning.actions import BaseSampleAction
 from ReinventQC.running_modes.automated_curriculum_learning.dto import SampledBatchDTO

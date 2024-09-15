@@ -5,9 +5,9 @@ from rdkit.Chem.Descriptors import MolWt
 from rdkit.Chem.Lipinski import RingCount, NumRotatableBonds, NumHAcceptors, NumHDonors, HeavyAtomCount
 from rdkit.Chem.rdchem import Mol
 
-from reinvent_chemistry import TransformationTokens
-from reinvent_chemistry.library_design.dtos import FilteringConditionDTO
-from reinvent_chemistry.library_design.enums import MolecularDescriptorsEnum
+from ReinventQC.reinvent_chemistry import TransformationTokens
+from ReinventQC.reinvent_chemistry.library_design.dtos import FilteringConditionDTO
+from ReinventQC.reinvent_chemistry.library_design.enums import MolecularDescriptorsEnum
 
 
 class FragmentFilter:

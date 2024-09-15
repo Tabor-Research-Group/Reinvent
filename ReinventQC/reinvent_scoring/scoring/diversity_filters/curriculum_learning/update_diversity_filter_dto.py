@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 from typing import List
 
-from reinvent_scoring.scoring.diversity_filters.curriculum_learning.loggable_data_dto import UpdateLoggableDataDTO
-from reinvent_scoring.scoring.score_summary import FinalSummary
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.curriculum_learning.loggable_data_dto import UpdateLoggableDataDTO
+from ReinventQC.reinvent_scoring.scoring.score_summary import FinalSummary
 
 
 @dataclass

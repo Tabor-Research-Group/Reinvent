@@ -8,8 +8,8 @@ import torch
 import torch.nn as tnn
 import torch.nn.functional as tnnf
 
-from reinvent_models.model_factory.enums.model_mode_enum import ModelModeEnum
-from reinvent_models.reinvent_core.models import vocabulary as mv
+from ReinventQC.reinvent_models.model_factory.enums.model_mode_enum import ModelModeEnum
+from ReinventQC.reinvent_models.reinvent_core.models import vocabulary as mv
 
 
 class RNN(tnn.Module):

@@ -1,13 +1,13 @@
 from abc import ABC, abstractmethod
 from typing import List
 
-from reinvent_chemistry.conversions import Conversions
+from ReinventQC.reinvent_chemistry.conversions import Conversions
 
-from reinvent_scoring.scoring.enums import TransformationTypeEnum, TransformationParametersEnum
-from reinvent_scoring.scoring.score_transformations import TransformationFactory
-from reinvent_scoring.scoring.component_parameters import ComponentParameters
-from reinvent_scoring.scoring.score_summary import ComponentSummary
-from reinvent_scoring.scoring.enums import ComponentSpecificParametersEnum
+from ReinventQC.reinvent_scoring.scoring.enums import TransformationTypeEnum, TransformationParametersEnum
+from ReinventQC.reinvent_scoring.scoring.score_transformations import TransformationFactory
+from ReinventQC.reinvent_scoring.scoring.component_parameters import ComponentParameters
+from ReinventQC.reinvent_scoring.scoring.score_summary import ComponentSummary
+from ReinventQC.reinvent_scoring.scoring.enums import ComponentSpecificParametersEnum
 
 
 class BaseScoreComponent(ABC):

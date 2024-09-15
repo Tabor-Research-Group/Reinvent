@@ -3,9 +3,9 @@ import itertools as it
 import os
 
 from torch.utils.data import DataLoader
-from reinvent_chemistry.file_reader import FileReader
-from reinvent_models.link_invent.dataset.paired_dataset import PairedDataset
-from reinvent_models.model_factory.generative_model_base import GenerativeModelBase
+from ReinventQC.reinvent_chemistry.file_reader import FileReader
+from ReinventQC.reinvent_models.link_invent.dataset.paired_dataset import PairedDataset
+from ReinventQC.reinvent_models.model_factory.generative_model_base import GenerativeModelBase
 
 from ReinventQC.running_modes.configurations.transfer_learning.link_invent_transfer_learning_configuration import \
     LinkInventTransferLearningConfiguration

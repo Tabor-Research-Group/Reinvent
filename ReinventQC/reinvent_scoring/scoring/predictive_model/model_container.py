@@ -1,11 +1,11 @@
 from typing import Dict, Any
 
-from reinvent_scoring.scoring.enums.container_type_enum import ContainerType
-from reinvent_scoring.scoring.enums.component_specific_parameters_enum import ComponentSpecificParametersEnum
+from ReinventQC.reinvent_scoring.scoring.enums.container_type_enum import ContainerType
+from ReinventQC.reinvent_scoring.scoring.enums.component_specific_parameters_enum import ComponentSpecificParametersEnum
 
-from reinvent_scoring.scoring.predictive_model.base_model_container import BaseModelContainer
-from reinvent_scoring.scoring.predictive_model.optuna_container import OptunaModelContainer
-from reinvent_scoring.scoring.predictive_model.scikit_model_container import ScikitModelContainer
+from ReinventQC.reinvent_scoring.scoring.predictive_model.base_model_container import BaseModelContainer
+from ReinventQC.reinvent_scoring.scoring.predictive_model.optuna_container import OptunaModelContainer
+from ReinventQC.reinvent_scoring.scoring.predictive_model.scikit_model_container import ScikitModelContainer
 
 
 class ModelContainer:

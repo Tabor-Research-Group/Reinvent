@@ -4,13 +4,13 @@ import os
 from abc import ABC, abstractmethod
 import numpy as np
 import torch
-from reinvent_scoring import ComponentSpecificParametersEnum
+from ReinventQC.reinvent_scoring import ComponentSpecificParametersEnum
 
 from ReinventQC.running_modes.automated_curriculum_learning.inception.inception import Inception
 from ReinventQC.running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
 from ReinventQC.running_modes.configurations.logging.reinforcement_log_configuration import ReinforcementLoggerConfiguration
-from reinvent_scoring.scoring.enums.scoring_function_component_enum import ScoringFunctionComponentNameEnum
-from reinvent_scoring.scoring.score_summary import FinalSummary
+from ReinventQC.reinvent_scoring.scoring.enums.scoring_function_component_enum import ScoringFunctionComponentNameEnum
+from ReinventQC.reinvent_scoring.scoring.score_summary import FinalSummary
 
 
 class BaseCurriculumLogger(ABC):

@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from reinvent_models.model_factory.generative_model_base import GenerativeModelBase
+from ReinventQC.reinvent_models.model_factory.generative_model_base import GenerativeModelBase
 
 
 @dataclass

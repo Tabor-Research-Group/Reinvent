@@ -1,4 +1,4 @@
-from reinvent_models.model_factory.enums.model_type_enum import ModelTypeEnum
+from ReinventQC.reinvent_models.model_factory.enums.model_type_enum import ModelTypeEnum
 
 from ReinventQC.running_modes.automated_curriculum_learning.logging.base_logger import BaseLogger
 from ReinventQC.running_modes.automated_curriculum_learning.logging.local_logger import LocalLogger

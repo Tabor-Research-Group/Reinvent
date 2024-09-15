@@ -2,12 +2,12 @@ import os
 import numpy as np
 import requests
 import torch
-from reinvent_scoring import ScoringFunctionComponentNameEnum, FinalSummary, ComponentSpecificParametersEnum
-from reinvent_scoring.scoring.diversity_filters.lib_invent.base_diversity_filter import BaseDiversityFilter
+from ReinventQC.reinvent_scoring import ScoringFunctionComponentNameEnum, FinalSummary, ComponentSpecificParametersEnum
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.lib_invent.base_diversity_filter import BaseDiversityFilter
 
-import running_modes.utils.configuration as ull
-import reinvent_chemistry.logging as ul_rl
-import running_modes.utils.general as ul_gen
+import ReinventQC.running_modes.utils.configuration as ull
+import ReinventQC.reinvent_chemistry.logging as ul_rl
+import ReinventQC.running_modes.utils.general as ul_gen
 
 from ReinventQC.running_modes.configurations import GeneralConfigurationEnvelope, ReinforcementLoggerConfiguration, \
     get_remote_logging_auth_token

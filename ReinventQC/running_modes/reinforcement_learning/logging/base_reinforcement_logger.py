@@ -4,14 +4,14 @@ import os
 from abc import ABC, abstractmethod
 import numpy as np
 import torch
-from reinvent_scoring import ComponentSpecificParametersEnum
+from ReinventQC.reinvent_scoring import ComponentSpecificParametersEnum
 
-from reinvent_scoring.scoring.diversity_filters.reinvent_core.base_diversity_filter import BaseDiversityFilter
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.reinvent_core.base_diversity_filter import BaseDiversityFilter
 from ReinventQC.running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
 from ReinventQC.running_modes.configurations.logging.reinforcement_log_configuration import ReinforcementLoggerConfiguration
 from ReinventQC.running_modes.reinforcement_learning.inception import Inception
-from reinvent_scoring.scoring.score_summary import FinalSummary
-from reinvent_scoring.scoring.enums.scoring_function_component_enum import ScoringFunctionComponentNameEnum
+from ReinventQC.reinvent_scoring.scoring.score_summary import FinalSummary
+from ReinventQC.reinvent_scoring.scoring.enums.scoring_function_component_enum import ScoringFunctionComponentNameEnum
 
 
 class BaseReinforcementLogger(ABC):

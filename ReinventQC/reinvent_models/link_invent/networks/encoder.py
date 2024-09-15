@@ -2,7 +2,7 @@ import torch
 from torch import nn as tnn
 from torch.nn.utils import rnn as tnnur
 
-from reinvent_models.model_factory.enums.model_parameter_enum import ModelParametersEnum
+from ReinventQC.reinvent_models.model_factory.enums.model_parameter_enum import ModelParametersEnum
 
 
 class Encoder(tnn.Module):

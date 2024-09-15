@@ -3,7 +3,7 @@ from typing import Tuple
 
 import numpy as np
 import torch
-from reinvent_models.lib_invent.enums.generative_model_regime import GenerativeModelRegimeEnum
+from ReinventQC.reinvent_models.lib_invent.enums.generative_model_regime import GenerativeModelRegimeEnum
 from ReinventQC.running_modes.reinforcement_learning.configurations.learning_strategy_configuration import LearningStrategyConfiguration
 
 

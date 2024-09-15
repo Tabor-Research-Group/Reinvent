@@ -4,12 +4,12 @@ from typing import List
 import numpy as np
 from pathos.multiprocessing import ProcessPool
 
-from reinvent_chemistry.conversions import Conversions
-from reinvent_scoring.scoring.component_parameters import ComponentParameters
-from reinvent_scoring.scoring.score_components.score_component_factory import ScoreComponentFactory
-from reinvent_scoring.scoring.score_summary import ComponentSummary, FinalSummary
-from reinvent_scoring.scoring.enums import ComponentSpecificParametersEnum
-from reinvent_scoring.scoring.enums import ScoringFunctionComponentNameEnum
+from ReinventQC.reinvent_chemistry.conversions import Conversions
+from ReinventQC.reinvent_scoring.scoring.component_parameters import ComponentParameters
+from ReinventQC.reinvent_scoring.scoring.score_components.score_component_factory import ScoreComponentFactory
+from ReinventQC.reinvent_scoring.scoring.score_summary import ComponentSummary, FinalSummary
+from ReinventQC.reinvent_scoring.scoring.enums import ComponentSpecificParametersEnum
+from ReinventQC.reinvent_scoring.scoring.enums import ScoringFunctionComponentNameEnum
 
 
 def _update_raw_score(summary: ComponentSummary, query_length: int, valid_indices: List[int]) -> ComponentSummary:

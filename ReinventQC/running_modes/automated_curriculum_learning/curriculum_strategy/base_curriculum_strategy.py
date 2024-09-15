@@ -2,12 +2,12 @@ from abc import ABC, abstractmethod
 from typing import Union
 
 import torch
-from reinvent_chemistry.library_design import BondMaker, AttachmentPoints
-from reinvent_models.model_factory.generative_model_base import GenerativeModelBase
-from reinvent_scoring import ScoringFunctionFactory, Conversions
-from reinvent_scoring.scoring.diversity_filters.curriculum_learning.base_diversity_filter import BaseDiversityFilter
-from reinvent_scoring.scoring.diversity_filters.curriculum_learning.diversity_filter import DiversityFilter
-from reinvent_scoring.scoring.function.base_scoring_function import BaseScoringFunction
+from ReinventQC.reinvent_chemistry.library_design import BondMaker, AttachmentPoints
+from ReinventQC.reinvent_models.model_factory.generative_model_base import GenerativeModelBase
+from ReinventQC.reinvent_scoring import ScoringFunctionFactory, Conversions
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.curriculum_learning.base_diversity_filter import BaseDiversityFilter
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.curriculum_learning.diversity_filter import DiversityFilter
+from ReinventQC.reinvent_scoring.scoring.function.base_scoring_function import BaseScoringFunction
 
 from ReinventQC.running_modes.automated_curriculum_learning.dto import CurriculumOutcomeDTO
 from ReinventQC.running_modes.automated_curriculum_learning.inception.inception import Inception

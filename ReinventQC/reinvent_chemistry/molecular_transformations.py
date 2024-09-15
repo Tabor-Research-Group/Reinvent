@@ -3,9 +3,9 @@ from typing import List
 
 from rdkit.Chem.rdchem import Mol, RWMol, BondType
 from rdkit.Chem.rdmolops import CombineMols, SanitizeMol
-from reinvent_chemistry.conversions import Conversions
+from ReinventQC.reinvent_chemistry.conversions import Conversions
 
-from reinvent_chemistry import TransformationTokens
+from ReinventQC.reinvent_chemistry import TransformationTokens
 
 
 class MolecularTransformations:

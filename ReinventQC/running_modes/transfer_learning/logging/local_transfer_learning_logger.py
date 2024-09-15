@@ -6,7 +6,7 @@ from torch.utils.tensorboard import SummaryWriter
 
 from ReinventQC.running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
 from ReinventQC.running_modes.transfer_learning.logging.base_transfer_learning_logger import BaseTransferLearningLogger
-from reinvent_chemistry.logging import fraction_valid_smiles, add_mols
+from ReinventQC.reinvent_chemistry.logging import fraction_valid_smiles, add_mols
 
 
 class LocalTransferLearningLogger(BaseTransferLearningLogger):

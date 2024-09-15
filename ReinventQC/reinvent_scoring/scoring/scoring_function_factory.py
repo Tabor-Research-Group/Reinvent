@@ -1,8 +1,8 @@
-from reinvent_scoring.scoring.component_parameters import ComponentParameters
-from reinvent_scoring.scoring import CustomProduct, CustomSum
-from reinvent_scoring.scoring.function.base_scoring_function import BaseScoringFunction
-from reinvent_scoring.scoring.scoring_function_parameters import ScoringFunctionParameters
-from reinvent_scoring.scoring.enums import ScoringFunctionNameEnum
+from ReinventQC.reinvent_scoring.scoring.component_parameters import ComponentParameters
+from ReinventQC.reinvent_scoring.scoring import CustomProduct, CustomSum
+from ReinventQC.reinvent_scoring.scoring.function.base_scoring_function import BaseScoringFunction
+from ReinventQC.reinvent_scoring.scoring.scoring_function_parameters import ScoringFunctionParameters
+from ReinventQC.reinvent_scoring.scoring.enums import ScoringFunctionNameEnum
 
 
 class ScoringFunctionFactory:

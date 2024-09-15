@@ -5,7 +5,7 @@ from torch import Tensor
 from torch.nn.utils.rnn import pad_sequence
 from torch.utils import data as tud
 
-from reinvent_models.link_invent.model_vocabulary.paired_model_vocabulary import PairedModelVocabulary
+from ReinventQC.reinvent_models.link_invent.model_vocabulary.paired_model_vocabulary import PairedModelVocabulary
 
 
 class PairedDataset(tud.Dataset):

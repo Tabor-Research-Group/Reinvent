@@ -3,11 +3,11 @@ from collections import namedtuple
 import numpy as np
 from openeye import oechem, oeomega, oeshape
 
-from reinvent_scoring.scoring.component_parameters import ComponentParameters
-from reinvent_scoring.scoring.score_components.rocs.base_rocs_component import BaseROCSComponent
-from reinvent_scoring.scoring.enums import ROCSSimilarityMeasuresEnum
-from reinvent_scoring.scoring.enums import ROCSInputFileTypesEnum
-from reinvent_scoring.scoring.enums import ROCSSpecificParametersEnum
+from ReinventQC.reinvent_scoring.scoring.component_parameters import ComponentParameters
+from ReinventQC.reinvent_scoring.scoring.score_components.rocs.base_rocs_component import BaseROCSComponent
+from ReinventQC.reinvent_scoring.scoring.enums import ROCSSimilarityMeasuresEnum
+from ReinventQC.reinvent_scoring.scoring.enums import ROCSInputFileTypesEnum
+from ReinventQC.reinvent_scoring.scoring.enums import ROCSSpecificParametersEnum
 
 
 class RocsSimilarity(BaseROCSComponent):

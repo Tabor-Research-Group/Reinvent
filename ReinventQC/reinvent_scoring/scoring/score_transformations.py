@@ -2,8 +2,8 @@ import numpy as np
 import math
 from scipy.interpolate import interp1d
 
-from reinvent_scoring.scoring.enums import TransformationTypeEnum
-from reinvent_scoring.scoring.enums import TransformationParametersEnum 
+from ReinventQC.reinvent_scoring.scoring.enums import TransformationTypeEnum
+from ReinventQC.reinvent_scoring.scoring.enums import TransformationParametersEnum 
 
 class TransformationFactory:
 

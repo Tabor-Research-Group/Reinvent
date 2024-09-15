@@ -6,9 +6,9 @@ from typing import List
 import numpy as np
 import requests
 
-from reinvent_scoring.scoring.component_parameters import ComponentParameters
-from reinvent_scoring.scoring.enums import EnvironmentalVariablesEnum
-from reinvent_scoring.scoring.score_components.pip.base_rest_component import BaseRESTComponent
+from ReinventQC.reinvent_scoring.scoring.component_parameters import ComponentParameters
+from ReinventQC.reinvent_scoring.scoring.enums import EnvironmentalVariablesEnum
+from ReinventQC.reinvent_scoring.scoring.score_components.pip.base_rest_component import BaseRESTComponent
 
 
 class BasePiPModelComponent(BaseRESTComponent):

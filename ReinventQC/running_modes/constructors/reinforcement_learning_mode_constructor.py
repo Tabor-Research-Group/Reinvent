@@ -1,11 +1,11 @@
-import reinvent_scoring.scoring.diversity_filters.lib_invent.diversity_filter as lib_invent_df
+import ReinventQC.reinvent_scoring.scoring.diversity_filters.lib_invent.diversity_filter as lib_invent_df
 import torch
 from dacite import from_dict
-from reinvent_models.lib_invent.enums.generative_model_regime import GenerativeModelRegimeEnum
-from reinvent_models.model_factory.configurations.model_configuration import ModelConfiguration
-from reinvent_models.model_factory.generative_model import GenerativeModel
-from reinvent_scoring.scoring import ScoringFunctionFactory
-from reinvent_scoring.scoring.diversity_filters.reinvent_core.diversity_filter import DiversityFilter
+from ReinventQC.reinvent_models.lib_invent.enums.generative_model_regime import GenerativeModelRegimeEnum
+from ReinventQC.reinvent_models.model_factory.configurations.model_configuration import ModelConfiguration
+from ReinventQC.reinvent_models.model_factory.generative_model import GenerativeModel
+from ReinventQC.reinvent_scoring.scoring import ScoringFunctionFactory
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.reinvent_core.diversity_filter import DiversityFilter
 
 from ReinventQC.running_modes.configurations import GeneralConfigurationEnvelope, ReinforcementLearningComponents, \
     ReinforcementLoggerConfiguration

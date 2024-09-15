@@ -1,4 +1,4 @@
-from reinvent_models.model_factory.enums.model_type_enum import ModelTypeEnum
+from ReinventQC.reinvent_models.model_factory.enums.model_type_enum import ModelTypeEnum
 
 from ReinventQC.running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
 from ReinventQC.running_modes.configurations.logging.transfer_learning_log_configuration import TransferLearningLoggerConfig

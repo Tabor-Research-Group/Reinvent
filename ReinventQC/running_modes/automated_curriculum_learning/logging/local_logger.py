@@ -1,11 +1,11 @@
 import os
 
 import numpy as np
-from reinvent_chemistry.logging import padding_with_invalid_smiles, \
+from ReinventQC.reinvent_chemistry.logging import padding_with_invalid_smiles, \
     check_for_invalid_mols_and_create_legend, find_matching_pattern_in_smiles, add_mols, fraction_valid_smiles
-from reinvent_scoring.scoring.diversity_filters.lib_invent.base_diversity_filter import BaseDiversityFilter
-from reinvent_scoring.scoring.enums import ComponentSpecificParametersEnum, ScoringFunctionComponentNameEnum
-from reinvent_scoring.scoring.score_summary import FinalSummary
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.lib_invent.base_diversity_filter import BaseDiversityFilter
+from ReinventQC.reinvent_scoring.scoring.enums import ComponentSpecificParametersEnum, ScoringFunctionComponentNameEnum
+from ReinventQC.reinvent_scoring.scoring.score_summary import FinalSummary
 from torch.utils.tensorboard import SummaryWriter
 
 from ReinventQC.running_modes.automated_curriculum_learning.dto.timestep_dto import TimestepDTO

@@ -2,13 +2,13 @@ import abc
 
 import numpy as np
 import pandas as pd
-from reinvent_chemistry.conversions import Conversions
+from ReinventQC.reinvent_chemistry.conversions import Conversions
 
-from reinvent_scoring.scoring.diversity_filters.curriculum_learning import DiversityFilterParameters, \
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.curriculum_learning import DiversityFilterParameters, \
     DiversityFilterMemory
-from reinvent_scoring.scoring.diversity_filters.curriculum_learning.loggable_data_dto import UpdateLoggableDataDTO
-from reinvent_scoring.scoring.diversity_filters.curriculum_learning.memory_record_dto import MemoryRecordDTO
-from reinvent_scoring.scoring.diversity_filters.curriculum_learning.update_diversity_filter_dto import \
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.curriculum_learning.loggable_data_dto import UpdateLoggableDataDTO
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.curriculum_learning.memory_record_dto import MemoryRecordDTO
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.curriculum_learning.update_diversity_filter_dto import \
     UpdateDiversityFilterDTO
 
 

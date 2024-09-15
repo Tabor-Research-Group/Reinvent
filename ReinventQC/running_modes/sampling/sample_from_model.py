@@ -2,7 +2,7 @@ import os
 import numpy as np
 import tqdm
 
-import reinvent_models.reinvent_core.models.model as reinvent
+import ReinventQC.reinvent_models.reinvent_core.models.model as reinvent
 
 from ReinventQC.running_modes.constructors.base_running_mode import BaseRunningMode
 from ReinventQC.running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope

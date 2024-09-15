@@ -1,9 +1,9 @@
 from typing import List
 
-from reinvent_scoring.scoring.component_parameters import ComponentParameters
-from reinvent_scoring.scoring.enums import ScoringFunctionComponentNameEnum
-from reinvent_scoring.scoring.score_components import BaseScoreComponent
-from reinvent_scoring.scoring.score_components import TanimotoSimilarity, \
+from ReinventQC.reinvent_scoring.scoring.component_parameters import ComponentParameters
+from ReinventQC.reinvent_scoring.scoring.enums import ScoringFunctionComponentNameEnum
+from ReinventQC.reinvent_scoring.scoring.score_components import BaseScoreComponent
+from ReinventQC.reinvent_scoring.scoring.score_components import TanimotoSimilarity, \
     JaccardDistance, CustomAlerts, QedScore, MatchingSubstructure, MatchingScaffold,\
     RocsSimilarity, ParallelRocsSimilarity, PredictivePropertyComponent, SelectivityComponent, \
     SASComponent, MolWeight, PSA, RotatableBonds, ConsRotatableBonds, Binder, SCScore, SAScore, HBD_Lipinski, HBA_Lipinski, \
@@ -12,7 +12,7 @@ from reinvent_scoring.scoring.score_components import TanimotoSimilarity, \
     LinkerLengthRatio, LinkerGraphLength, LinkerEffectiveLength, LinkerNumRings, LinkerNumAliphaticRings, \
     LinkerNumAromaticRings, LinkerNumSPAtoms, LinkerNumSP2Atoms, LinkerNumSP3Atoms, LinkerNumHBA, \
     LinkerNumHBD, LinkerMolWeight, LinkerRatioRotatableBonds, DockStream, NumAromaticRings, NumAliphaticRings
-from reinvent_scoring.scoring.score_components.console_invoked import Icolos, RunJobs, ExJobs, Triplets
+from ReinventQC.reinvent_scoring.scoring.score_components.console_invoked import Icolos, RunJobs, ExJobs, Triplets
 
 
 class ScoreComponentFactory:

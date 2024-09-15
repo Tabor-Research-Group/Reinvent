@@ -1,6 +1,6 @@
 import requests
 
-import running_modes.utils.configuration as utils_log
+import ReinventQC.running_modes.utils.configuration as utils_log
 from ReinventQC.running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
 from ReinventQC.running_modes.scoring.logging.base_scoring_logger import BaseScoringLogger
 from ReinventQC.running_modes.configurations.logging import get_remote_logging_auth_token

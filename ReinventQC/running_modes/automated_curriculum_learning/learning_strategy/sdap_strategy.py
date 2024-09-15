@@ -1,5 +1,5 @@
 import torch
-from reinvent_models.link_invent.dto import BatchLikelihoodDTO
+from ReinventQC.reinvent_models.link_invent.dto import BatchLikelihoodDTO
 
 from ReinventQC.running_modes.automated_curriculum_learning.dto import UpdatedLikelihoodsDTO
 from ReinventQC.running_modes.automated_curriculum_learning.learning_strategy.base_double_query_learning_strategy import \

@@ -4,12 +4,12 @@ import torch
 from dacite import from_dict
 from torch import nn as tnn
 
-from reinvent_models.link_invent.dto import LinkInventModelParameterDTO
-from reinvent_models.link_invent.dto import SampledSequencesDTO
-from reinvent_models.link_invent.model_vocabulary.paired_model_vocabulary import PairedModelVocabulary
-from reinvent_models.model_factory.enums.model_mode_enum import ModelModeEnum
-from reinvent_models.model_factory.generative_model_base import GenerativeModelBase
-from reinvent_models.link_invent.networks import EncoderDecoder
+from ReinventQC.reinvent_models.link_invent.dto import LinkInventModelParameterDTO
+from ReinventQC.reinvent_models.link_invent.dto import SampledSequencesDTO
+from ReinventQC.reinvent_models.link_invent.model_vocabulary.paired_model_vocabulary import PairedModelVocabulary
+from ReinventQC.reinvent_models.model_factory.enums.model_mode_enum import ModelModeEnum
+from ReinventQC.reinvent_models.model_factory.generative_model_base import GenerativeModelBase
+from ReinventQC.reinvent_models.link_invent.networks import EncoderDecoder
 
 
 class LinkInventModel:

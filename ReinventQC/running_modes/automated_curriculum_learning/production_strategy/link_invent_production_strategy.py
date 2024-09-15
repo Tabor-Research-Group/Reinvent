@@ -3,12 +3,12 @@ from abc import abstractmethod
 from typing import List
 
 import torch
-from reinvent_models.model_factory.generative_model_base import GenerativeModelBase
-from reinvent_scoring import FinalSummary
-from reinvent_scoring.scoring.diversity_filters.curriculum_learning.loggable_data_dto import UpdateLoggableDataDTO
-from reinvent_scoring.scoring.diversity_filters.curriculum_learning.update_diversity_filter_dto import \
+from ReinventQC.reinvent_models.model_factory.generative_model_base import GenerativeModelBase
+from ReinventQC.reinvent_scoring import FinalSummary
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.curriculum_learning.loggable_data_dto import UpdateLoggableDataDTO
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.curriculum_learning.update_diversity_filter_dto import \
     UpdateDiversityFilterDTO
-from reinvent_scoring.scoring.function.base_scoring_function import BaseScoringFunction
+from ReinventQC.reinvent_scoring.scoring.function.base_scoring_function import BaseScoringFunction
 
 from ReinventQC.running_modes.automated_curriculum_learning.actions import LinkInventSampleModel
 from ReinventQC.running_modes.automated_curriculum_learning.dto import SampledSequencesDTO, TimestepDTO, UpdatedLikelihoodsDTO

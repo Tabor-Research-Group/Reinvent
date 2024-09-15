@@ -2,10 +2,10 @@ from typing import List, Dict
 
 import pandas as pd
 
-from reinvent_scoring.scoring.diversity_filters.curriculum_learning.column_names_enum import ColumnNamesEnum
-from reinvent_scoring.scoring.diversity_filters.curriculum_learning.memory_record_dto import MemoryRecordDTO
-from reinvent_scoring.scoring.score_summary import ComponentSummary
-from reinvent_scoring.scoring.enums.scoring_function_component_enum import ScoringFunctionComponentNameEnum
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.curriculum_learning.column_names_enum import ColumnNamesEnum
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.curriculum_learning.memory_record_dto import MemoryRecordDTO
+from ReinventQC.reinvent_scoring.scoring.score_summary import ComponentSummary
+from ReinventQC.reinvent_scoring.scoring.enums.scoring_function_component_enum import ScoringFunctionComponentNameEnum
 
 
 class DiversityFilterMemory:

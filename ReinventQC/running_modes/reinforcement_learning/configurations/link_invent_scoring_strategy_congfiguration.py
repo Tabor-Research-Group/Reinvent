@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from reinvent_scoring.scoring.diversity_filters.reinvent_core.diversity_filter_parameters import \
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.reinvent_core.diversity_filter_parameters import \
     DiversityFilterParameters
 
 from ReinventQC.running_modes.reinforcement_learning.configurations.scoring_strategy_configuration import \

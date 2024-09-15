@@ -6,7 +6,7 @@ import torch.utils.data as tud
 from torch import Tensor
 from torch.nn.utils.rnn import pad_sequence
 
-from reinvent_models.link_invent.model_vocabulary.model_vocabulary import ModelVocabulary
+from ReinventQC.reinvent_models.link_invent.model_vocabulary.model_vocabulary import ModelVocabulary
 
 
 class Dataset(tud.Dataset):
@@ -50,6 +50,5 @@ class Dataset(tud.Dataset):
         """
         seq_lengths = torch.tensor([len(seq) for seq in encoded_seqs], dtype=torch.int64)
         return pad_sequence(encoded_seqs, batch_first=True).cuda(), seq_lengths
-
 
 

@@ -1,7 +1,7 @@
 from typing import List
 
-from reinvent_models.link_invent.model_vocabulary.vocabulary import SMILESTokenizer, Vocabulary
-from reinvent_models.link_invent.model_vocabulary.model_vocabulary import ModelVocabulary
+from ReinventQC.reinvent_models.link_invent.model_vocabulary.vocabulary import SMILESTokenizer, Vocabulary
+from ReinventQC.reinvent_models.link_invent.model_vocabulary.model_vocabulary import ModelVocabulary
 
 
 class PairedModelVocabulary:

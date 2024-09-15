@@ -1,8 +1,8 @@
 from rdkit.Chem.rdchem import Mol, BondType, RWMol
 from rdkit.Chem.rdmolops import SanitizeMol, CombineMols
 
-from reinvent_chemistry import Conversions, TransformationTokens
-from reinvent_chemistry.library_design import AttachmentPoints
+from ReinventQC.reinvent_chemistry import Conversions, TransformationTokens
+from ReinventQC.reinvent_chemistry.library_design import AttachmentPoints
 
 
 class BondMaker:

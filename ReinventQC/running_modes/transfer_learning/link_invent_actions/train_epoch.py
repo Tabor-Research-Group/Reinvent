@@ -1,5 +1,5 @@
-from reinvent_models.model_factory.enums.model_mode_enum import ModelModeEnum
-from reinvent_models.model_factory.generative_model_base import GenerativeModelBase
+from ReinventQC.reinvent_models.model_factory.enums.model_mode_enum import ModelModeEnum
+from ReinventQC.reinvent_models.model_factory.generative_model_base import GenerativeModelBase
 from torch.nn.utils import clip_grad_norm_
 
 from ReinventQC.running_modes.configurations.transfer_learning.link_invent_transfer_learning_configuration import \

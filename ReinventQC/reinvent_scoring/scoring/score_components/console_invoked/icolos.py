@@ -8,10 +8,10 @@ import time
 import numpy as np
 from typing import List, Tuple
 
-from reinvent_scoring.scoring.utils import _is_development_environment
+from ReinventQC.reinvent_scoring.scoring.utils import _is_development_environment
 
-from reinvent_scoring.scoring.component_parameters import ComponentParameters
-from reinvent_scoring.scoring.score_components.console_invoked.base_console_invoked_component import BaseConsoleInvokedComponent
+from ReinventQC.reinvent_scoring.scoring.component_parameters import ComponentParameters
+from ReinventQC.reinvent_scoring.scoring.score_components.console_invoked.base_console_invoked_component import BaseConsoleInvokedComponent
 
 
 class Icolos(BaseConsoleInvokedComponent):

@@ -2,7 +2,7 @@ from typing import List
 
 import pandas as pd
 
-from reinvent_chemistry.library_design.reaction_definitions.leaving_groups_dto import LeavingGroupsDTO
+from ReinventQC.reinvent_chemistry.library_design.reaction_definitions.leaving_groups_dto import LeavingGroupsDTO
 
 
 class StandardDefinitions:

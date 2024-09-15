@@ -2,7 +2,7 @@ from typing import List
 
 from dataclasses import dataclass
 
-from reinvent_chemistry.library_design.reaction_definitions.building_block_pair_dto import BuildingBlockPairDTO
+from ReinventQC.reinvent_chemistry.library_design.reaction_definitions.building_block_pair_dto import BuildingBlockPairDTO
 
 
 @dataclass

@@ -2,8 +2,8 @@ from collections import OrderedDict
 
 from rdkit.Chem.rdchem import Mol
 
-from reinvent_chemistry import Conversions, TransformationTokens
-from reinvent_chemistry.library_design import BondMaker, AttachmentPoints
+from ReinventQC.reinvent_chemistry import Conversions, TransformationTokens
+from ReinventQC.reinvent_chemistry.library_design import BondMaker, AttachmentPoints
 
 
 class FragmentedMolecule:

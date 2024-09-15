@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 from typing import Tuple, List
 
-from reinvent_chemistry.conversions import Conversions
+from ReinventQC.reinvent_chemistry.conversions import Conversions
 
 from ReinventQC.running_modes.configurations import InceptionConfiguration
 

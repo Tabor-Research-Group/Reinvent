@@ -2,8 +2,8 @@ from typing import List
 
 import requests
 
-from reinvent_chemistry.library_design.aizynth.collection_of_pathways_dto import CollectionOfPathwaysDTO
-from reinvent_chemistry.library_design.aizynth.synthetic_pathway_dto import SyntheticPathwayDTO
+from ReinventQC.reinvent_chemistry.library_design.aizynth.collection_of_pathways_dto import CollectionOfPathwaysDTO
+from ReinventQC.reinvent_chemistry.library_design.aizynth.synthetic_pathway_dto import SyntheticPathwayDTO
 
 
 class AiZynthClient:

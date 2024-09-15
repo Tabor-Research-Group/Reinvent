@@ -2,7 +2,7 @@ from typing import List
 
 from dataclasses import dataclass
 
-from reinvent_chemistry.library_design.dtos.filtering_condition_dto import FilteringConditionDTO
+from ReinventQC.reinvent_chemistry.library_design.dtos.filtering_condition_dto import FilteringConditionDTO
 
 
 @dataclass

@@ -2,16 +2,16 @@ import time
 
 import numpy as np
 import torch
-from reinvent_chemistry.utils import get_indices_of_unique_smiles
-from reinvent_models.lib_invent.enums.generative_model_regime import GenerativeModelRegimeEnum
-from reinvent_models.model_factory.configurations.model_configuration import ModelConfiguration
-from reinvent_models.model_factory.generative_model import GenerativeModel
-from reinvent_scoring.scoring.diversity_filters.reinvent_core.diversity_filter import DiversityFilter
-from reinvent_scoring.scoring.diversity_filters.reinvent_core.diversity_filter_parameters import \
+from ReinventQC.reinvent_chemistry.utils import get_indices_of_unique_smiles
+from ReinventQC.reinvent_models.lib_invent.enums.generative_model_regime import GenerativeModelRegimeEnum
+from ReinventQC.reinvent_models.model_factory.configurations.model_configuration import ModelConfiguration
+from ReinventQC.reinvent_models.model_factory.generative_model import GenerativeModel
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.reinvent_core.diversity_filter import DiversityFilter
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.reinvent_core.diversity_filter_parameters import \
     DiversityFilterParameters
-from reinvent_scoring.scoring.score_summary import FinalSummary
-from reinvent_scoring.scoring.scoring_function_factory import ScoringFunctionFactory
-from reinvent_scoring.scoring.scoring_function_parameters import ScoringFunctionParameters
+from ReinventQC.reinvent_scoring.scoring.score_summary import FinalSummary
+from ReinventQC.reinvent_scoring.scoring.scoring_function_factory import ScoringFunctionFactory
+from ReinventQC.reinvent_scoring.scoring.scoring_function_parameters import ScoringFunctionParameters
 
 from ReinventQC.running_modes.automated_curriculum_learning.inception.inception import Inception
 from ReinventQC.running_modes.configurations import GeneralConfigurationEnvelope, InceptionConfiguration

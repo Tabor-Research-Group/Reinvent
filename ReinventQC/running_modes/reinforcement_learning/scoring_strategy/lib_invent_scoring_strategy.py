@@ -1,10 +1,10 @@
 from typing import List, Any
 
 import numpy as np
-from reinvent_chemistry.library_design.reaction_filters.reaction_filter import ReactionFilter
-from reinvent_scoring import FinalSummary, ScoringFunctionComponentNameEnum, LoggableComponent, ComponentParameters, \
+from ReinventQC.reinvent_chemistry.library_design.reaction_filters.reaction_filter import ReactionFilter
+from ReinventQC.reinvent_scoring import FinalSummary, ScoringFunctionComponentNameEnum, LoggableComponent, ComponentParameters, \
     ComponentSummary
-from reinvent_scoring.scoring.diversity_filters.lib_invent.base_diversity_filter import BaseDiversityFilter
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.lib_invent.base_diversity_filter import BaseDiversityFilter
 
 from ReinventQC.running_modes.reinforcement_learning.configurations.lib_invent_scoring_strategy_configuration import \
     LibInventScoringStrategyConfiguration

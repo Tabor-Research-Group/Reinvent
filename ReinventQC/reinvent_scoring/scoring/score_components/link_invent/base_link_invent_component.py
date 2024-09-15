@@ -2,11 +2,11 @@ from abc import abstractmethod
 from typing import List
 
 import numpy as np
-from reinvent_chemistry.link_invent.linker_descriptors import LinkerDescriptors
+from ReinventQC.reinvent_chemistry.link_invent.linker_descriptors import LinkerDescriptors
 
-from reinvent_scoring.scoring.component_parameters import ComponentParameters
-from reinvent_scoring.scoring.score_components import BaseScoreComponent
-from reinvent_scoring.scoring.score_summary import ComponentSummary
+from ReinventQC.reinvent_scoring.scoring.component_parameters import ComponentParameters
+from ReinventQC.reinvent_scoring.scoring.score_components import BaseScoreComponent
+from ReinventQC.reinvent_scoring.scoring.score_summary import ComponentSummary
 
 
 class BaseLinkInventComponent(BaseScoreComponent):

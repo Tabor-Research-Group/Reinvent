@@ -1,9 +1,9 @@
-from reinvent_models.model_factory.configurations.model_configuration import ModelConfiguration
-from reinvent_models.model_factory.enums.model_type_enum import ModelTypeEnum
-from reinvent_models.model_factory.generative_model_base import GenerativeModelBase
-from reinvent_models.model_factory.lib_invent_adapter import LibInventAdapter
-from reinvent_models.model_factory.link_invent_adapter import LinkInventAdapter
-from reinvent_models.model_factory.reinvent_core_adapter import ReinventCoreAdapter
+from ReinventQC.reinvent_models.model_factory.configurations.model_configuration import ModelConfiguration
+from ReinventQC.reinvent_models.model_factory.enums.model_type_enum import ModelTypeEnum
+from ReinventQC.reinvent_models.model_factory.generative_model_base import GenerativeModelBase
+from ReinventQC.reinvent_models.model_factory.lib_invent_adapter import LibInventAdapter
+from ReinventQC.reinvent_models.model_factory.link_invent_adapter import LinkInventAdapter
+from ReinventQC.reinvent_models.model_factory.reinvent_core_adapter import ReinventCoreAdapter
 
 class GenerativeModel:
     def __new__(cls, configuration: ModelConfiguration) -> GenerativeModelBase:
@@ -19,4 +19,3 @@ class GenerativeModel:
         else:
             raise ValueError(f"Invalid model_type provided: '{cls._configuration.model_type}")
         return model
-

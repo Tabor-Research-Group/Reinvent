@@ -2,12 +2,12 @@ from typing import List
 
 from torch.utils.data import DataLoader
 
-from reinvent_models.link_invent.dataset.paired_dataset import PairedDataset
-from reinvent_models.link_invent.dto.linkinvent_batch_dto import LinkInventBatchDTO
-from reinvent_models.link_invent.link_invent_model import LinkInventModel
-from reinvent_models.model_factory.generative_model_base import GenerativeModelBase
-from reinvent_models.link_invent.dto import BatchLikelihoodDTO
-from reinvent_models.link_invent.dto.sampled_sequence_dto import SampledSequencesDTO
+from ReinventQC.reinvent_models.link_invent.dataset.paired_dataset import PairedDataset
+from ReinventQC.reinvent_models.link_invent.dto.linkinvent_batch_dto import LinkInventBatchDTO
+from ReinventQC.reinvent_models.link_invent.link_invent_model import LinkInventModel
+from ReinventQC.reinvent_models.model_factory.generative_model_base import GenerativeModelBase
+from ReinventQC.reinvent_models.link_invent.dto import BatchLikelihoodDTO
+from ReinventQC.reinvent_models.link_invent.dto.sampled_sequence_dto import SampledSequencesDTO
 
 
 class LinkInventAdapter(GenerativeModelBase):

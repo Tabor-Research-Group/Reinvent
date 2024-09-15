@@ -2,9 +2,9 @@ from PIL import Image
 from typing import List, Tuple
 import numpy as np
 
-from reinvent_chemistry.logging import add_image
-from reinvent_chemistry.link_invent.molecule_with_highlighting import MoleculeWithHighlighting
-from reinvent_models.model_factory.generative_model_base import GenerativeModelBase
+from ReinventQC.reinvent_chemistry.logging import add_image
+from ReinventQC.reinvent_chemistry.link_invent.molecule_with_highlighting import MoleculeWithHighlighting
+from ReinventQC.reinvent_models.model_factory.generative_model_base import GenerativeModelBase
 
 from ReinventQC.running_modes.configurations import GeneralConfigurationEnvelope
 from ReinventQC.running_modes.transfer_learning.dto.collected_stats_dto import CollectedStatsDTO

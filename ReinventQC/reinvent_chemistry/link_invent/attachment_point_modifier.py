@@ -1,7 +1,7 @@
 import re
 
 from rdkit.Chem import Mol
-from reinvent_chemistry import Conversions
+from ReinventQC.reinvent_chemistry import Conversions
 
 
 class AttachmentPointModifier:

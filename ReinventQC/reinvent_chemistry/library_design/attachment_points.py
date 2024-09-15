@@ -3,7 +3,7 @@ from typing import List
 
 from rdkit.Chem.rdchem import Mol
 
-from reinvent_chemistry import Conversions, TransformationTokens
+from ReinventQC.reinvent_chemistry import Conversions, TransformationTokens
 
 
 class AttachmentPoints:

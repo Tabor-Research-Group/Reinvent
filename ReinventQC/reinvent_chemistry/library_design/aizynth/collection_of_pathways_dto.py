@@ -2,7 +2,7 @@ from typing import List
 
 from dataclasses import dataclass
 
-from reinvent_chemistry.library_design.aizynth.synthetic_pathway_dto import SyntheticPathwayDTO
+from ReinventQC.reinvent_chemistry.library_design.aizynth.synthetic_pathway_dto import SyntheticPathwayDTO
 
 
 @dataclass

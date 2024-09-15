@@ -6,10 +6,10 @@ from rdkit import DataStructs
 from rdkit.Chem.AtomPairs import Pairs
 from rdkit.Chem.Scaffolds import MurckoScaffold
 
-from reinvent_scoring.scoring.diversity_filters.curriculum_learning import DiversityFilterParameters
-from reinvent_scoring.scoring.diversity_filters.curriculum_learning.base_diversity_filter import BaseDiversityFilter
-from reinvent_scoring.scoring.diversity_filters.curriculum_learning.memory_record_dto import MemoryRecordDTO
-from reinvent_scoring.scoring.diversity_filters.curriculum_learning.update_diversity_filter_dto import \
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.curriculum_learning import DiversityFilterParameters
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.curriculum_learning.base_diversity_filter import BaseDiversityFilter
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.curriculum_learning.memory_record_dto import MemoryRecordDTO
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.curriculum_learning.update_diversity_filter_dto import \
     UpdateDiversityFilterDTO
 
 
@@ -82,4 +82,3 @@ class ScaffoldSimilarity(BaseDiversityFilter):
 
             self._scaffold_fingerprints[scaffold] = fp
         return scaffold
-

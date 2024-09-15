@@ -3,12 +3,12 @@ from typing import List, Tuple
 
 import numpy as np
 import torch
-from reinvent_models.model_factory.generative_model_base import GenerativeModelBase
-from reinvent_scoring import FinalSummary
-from reinvent_scoring.scoring.diversity_filters.curriculum_learning.diversity_filter import DiversityFilter
-from reinvent_scoring.scoring.diversity_filters.curriculum_learning.update_diversity_filter_dto import \
+from ReinventQC.reinvent_models.model_factory.generative_model_base import GenerativeModelBase
+from ReinventQC.reinvent_scoring import FinalSummary
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.curriculum_learning.diversity_filter import DiversityFilter
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.curriculum_learning.update_diversity_filter_dto import \
     UpdateDiversityFilterDTO
-from reinvent_scoring.scoring.function.base_scoring_function import BaseScoringFunction
+from ReinventQC.reinvent_scoring.scoring.function.base_scoring_function import BaseScoringFunction
 
 from ReinventQC.running_modes.automated_curriculum_learning.actions.reinvent_sample_model import ReinventSampleModel
 from ReinventQC.running_modes.automated_curriculum_learning.curriculum_strategy.base_curriculum_strategy import \

@@ -2,13 +2,13 @@ import pickle
 
 from typing import List
 
-from reinvent_scoring.scoring.predictive_model.base_model_container import BaseModelContainer
-from reinvent_scoring.scoring.predictive_model.model_container import ModelContainer
-from reinvent_scoring.scoring.component_parameters import ComponentParameters
-from reinvent_scoring.scoring.score_components import BaseScoreComponent
-from reinvent_scoring.scoring.score_summary import ComponentSummary
-from reinvent_scoring.scoring.score_transformations import TransformationFactory
-from reinvent_scoring.scoring.enums import TransformationTypeEnum, TransformationParametersEnum
+from ReinventQC.reinvent_scoring.scoring.predictive_model.base_model_container import BaseModelContainer
+from ReinventQC.reinvent_scoring.scoring.predictive_model.model_container import ModelContainer
+from ReinventQC.reinvent_scoring.scoring.component_parameters import ComponentParameters
+from ReinventQC.reinvent_scoring.scoring.score_components import BaseScoreComponent
+from ReinventQC.reinvent_scoring.scoring.score_summary import ComponentSummary
+from ReinventQC.reinvent_scoring.scoring.score_transformations import TransformationFactory
+from ReinventQC.reinvent_scoring.scoring.enums import TransformationTypeEnum, TransformationParametersEnum
 
 
 class SelectivityComponent(BaseScoreComponent):

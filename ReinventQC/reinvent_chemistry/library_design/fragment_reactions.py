@@ -4,10 +4,10 @@ from rdkit.Chem import AllChem, Mol
 from rdkit.Chem.Lipinski import RingCount
 from rdkit.Chem.rdChemReactions import ChemicalReaction
 
-from reinvent_chemistry import Conversions
-from reinvent_chemistry.library_design import BondMapper
-from reinvent_chemistry.library_design.dtos import ReactionDTO, ReactionOutcomeDTO
-from reinvent_chemistry.tokens import TransformationTokens
+from ReinventQC.reinvent_chemistry import Conversions
+from ReinventQC.reinvent_chemistry.library_design import BondMapper
+from ReinventQC.reinvent_chemistry.library_design.dtos import ReactionDTO, ReactionOutcomeDTO
+from ReinventQC.reinvent_chemistry.tokens import TransformationTokens
 
 
 class FragmentReactions:

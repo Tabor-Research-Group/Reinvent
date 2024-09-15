@@ -1,1 +1,1 @@
-from reinvent_scoring.scoring.score_components.synthetic_accessibility.sas_component import SASComponent
+from ReinventQC.reinvent_scoring.scoring.score_components.synthetic_accessibility.sas_component import SASComponent

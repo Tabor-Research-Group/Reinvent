@@ -1,10 +1,10 @@
 import numpy as np
 import torch
-from reinvent_chemistry.logging import fraction_valid_smiles, padding_with_invalid_smiles, \
+from ReinventQC.reinvent_chemistry.logging import fraction_valid_smiles, padding_with_invalid_smiles, \
     check_for_invalid_mols_and_create_legend, find_matching_pattern_in_smiles, add_mols
-from reinvent_scoring.scoring.diversity_filters.lib_invent.base_diversity_filter import BaseDiversityFilter
-from reinvent_scoring.scoring.enums.scoring_function_component_enum import ScoringFunctionComponentNameEnum
-from reinvent_scoring.scoring.score_summary import FinalSummary
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.lib_invent.base_diversity_filter import BaseDiversityFilter
+from ReinventQC.reinvent_scoring.scoring.enums.scoring_function_component_enum import ScoringFunctionComponentNameEnum
+from ReinventQC.reinvent_scoring.scoring.score_summary import FinalSummary
 from torch.utils.tensorboard import SummaryWriter
 
 from ReinventQC.running_modes.configurations import ReinforcementLoggerConfiguration, GeneralConfigurationEnvelope
@@ -87,4 +87,3 @@ class LocalBondLinkReinforcementLogger(BaseReinforcementLogger):
                 if len(smarts) > 0:
                     smarts_pattern = smarts[0]
         return smarts_pattern
-

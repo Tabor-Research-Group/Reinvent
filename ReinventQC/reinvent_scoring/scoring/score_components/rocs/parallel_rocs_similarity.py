@@ -6,11 +6,11 @@ from pathlib import Path
 import numpy as np
 from openeye import oechem, oeomega, oeshape, oequacpac
 
-from reinvent_scoring.scoring.component_parameters import ComponentParameters
-from reinvent_scoring.scoring.enums import ROCSSimilarityMeasuresEnum, ROCSInputFileTypesEnum, ROCSSpecificParametersEnum
-from reinvent_scoring.scoring.score_components.rocs import oehelper, oefuncs
-from reinvent_scoring.scoring.score_components.rocs.base_rocs_component import BaseROCSComponent
-from reinvent_scoring.scoring.score_components.rocs.default_values import ROCS_DEFAULT_VALUES
+from ReinventQC.reinvent_scoring.scoring.component_parameters import ComponentParameters
+from ReinventQC.reinvent_scoring.scoring.enums import ROCSSimilarityMeasuresEnum, ROCSInputFileTypesEnum, ROCSSpecificParametersEnum
+from ReinventQC.reinvent_scoring.scoring.score_components.rocs import oehelper, oefuncs
+from ReinventQC.reinvent_scoring.scoring.score_components.rocs.base_rocs_component import BaseROCSComponent
+from ReinventQC.reinvent_scoring.scoring.score_components.rocs.default_values import ROCS_DEFAULT_VALUES
 
 
 class ParallelRocsSimilarity(BaseROCSComponent):

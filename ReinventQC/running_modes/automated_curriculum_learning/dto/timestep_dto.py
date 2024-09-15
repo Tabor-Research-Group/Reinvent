@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
 import torch
-from reinvent_scoring.scoring import FinalSummary
+from ReinventQC.reinvent_scoring.scoring import FinalSummary
 
 
 @dataclass

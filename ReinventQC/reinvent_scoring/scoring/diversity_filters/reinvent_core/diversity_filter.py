@@ -1,7 +1,7 @@
-from reinvent_scoring.scoring.diversity_filters.reinvent_core import IdenticalMurckoScaffold, \
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.reinvent_core import IdenticalMurckoScaffold, \
     IdenticalTopologicalScaffold, ScaffoldSimilarity, NoScaffoldFilter
-from reinvent_scoring.scoring.diversity_filters.reinvent_core.base_diversity_filter import BaseDiversityFilter
-from reinvent_scoring.scoring.diversity_filters.reinvent_core.diversity_filter_parameters import \
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.reinvent_core.base_diversity_filter import BaseDiversityFilter
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.reinvent_core.diversity_filter_parameters import \
     DiversityFilterParameters
 
 

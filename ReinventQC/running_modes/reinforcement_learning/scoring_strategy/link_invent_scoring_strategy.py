@@ -1,7 +1,7 @@
 from typing import List
 
-from reinvent_scoring import FinalSummary
-from reinvent_scoring.scoring.diversity_filters.reinvent_core.base_diversity_filter import BaseDiversityFilter
+from ReinventQC.reinvent_scoring import FinalSummary
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.reinvent_core.base_diversity_filter import BaseDiversityFilter
 
 from ReinventQC.running_modes.reinforcement_learning.configurations.scoring_strategy_configuration import ScoringStrategyConfiguration
 from ReinventQC.running_modes.reinforcement_learning.dto.sampled_sequences_dto import SampledSequencesDTO

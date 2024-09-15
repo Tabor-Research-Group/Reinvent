@@ -9,9 +9,9 @@ from rdkit.Chem import Mol
 from rdkit.Chem.Draw import rdMolDraw2D
 from PIL import Image
 
-from reinvent_chemistry import Conversions, TransformationTokens
-from reinvent_chemistry.library_design import BondMaker, AttachmentPoints
-from reinvent_chemistry.link_invent.bond_breaker import BondBreaker
+from ReinventQC.reinvent_chemistry import Conversions, TransformationTokens
+from ReinventQC.reinvent_chemistry.library_design import BondMaker, AttachmentPoints
+from ReinventQC.reinvent_chemistry.link_invent.bond_breaker import BondBreaker
 
 
 class MoleculeWithHighlighting:

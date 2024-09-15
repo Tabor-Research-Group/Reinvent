@@ -1,2 +1,2 @@
-from reinvent_scoring.scoring.score_components.structural.azdock import AZdock
-from reinvent_scoring.scoring.score_components.structural.dockstream import DockStream
+from ReinventQC.reinvent_scoring.scoring.score_components.structural.azdock import AZdock
+from ReinventQC.reinvent_scoring.scoring.score_components.structural.dockstream import DockStream

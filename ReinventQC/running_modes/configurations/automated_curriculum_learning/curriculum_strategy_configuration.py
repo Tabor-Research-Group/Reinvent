@@ -1,7 +1,7 @@
 from typing import List
 
 from pydantic.dataclasses import dataclass
-from reinvent_scoring.scoring.diversity_filters.curriculum_learning import DiversityFilterParameters
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.curriculum_learning import DiversityFilterParameters
 
 from ReinventQC.running_modes.automated_curriculum_learning.learning_strategy.learning_strategy_configuration import \
     LearningStrategyConfiguration

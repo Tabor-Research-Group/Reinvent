@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from typing import Union
 import torch
 
-from reinvent_models.link_invent.dto.linkinvent_batch_dto import LinkInventBatchDTO
+from ReinventQC.reinvent_models.link_invent.dto.linkinvent_batch_dto import LinkInventBatchDTO
 
 
 @dataclass

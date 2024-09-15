@@ -2,7 +2,7 @@ import requests
 
 from ReinventQC.running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
 from ReinventQC.running_modes.validation.logging.base_validation_logger import BaseValidationLogger
-import running_modes.utils.configuration as utils_log
+import ReinventQC.running_modes.utils.configuration as utils_log
 
 from ReinventQC.running_modes.configurations.logging import get_remote_logging_auth_token
 

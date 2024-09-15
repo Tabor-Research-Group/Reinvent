@@ -1,9 +1,9 @@
 from typing import List
 import torch
 
-from reinvent_models.lib_invent.enums.generative_model_regime import GenerativeModelRegimeEnum
-from reinvent_models.model_factory.generative_model_base import GenerativeModelBase
-from reinvent_models.reinvent_core.models.model import Model
+from ReinventQC.reinvent_models.lib_invent.enums.generative_model_regime import GenerativeModelRegimeEnum
+from ReinventQC.reinvent_models.model_factory.generative_model_base import GenerativeModelBase
+from ReinventQC.reinvent_models.reinvent_core.models.model import Model
 
 
 class ReinventCoreAdapter(GenerativeModelBase):

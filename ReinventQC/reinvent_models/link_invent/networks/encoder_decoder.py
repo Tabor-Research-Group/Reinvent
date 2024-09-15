@@ -5,8 +5,8 @@ Implementation of a network using an Encoder-Decoder architecture.
 import torch.nn as tnn
 from torch import Tensor
 
-from reinvent_models.link_invent.networks.decoder import Decoder
-from reinvent_models.link_invent.networks.encoder import Encoder
+from ReinventQC.reinvent_models.link_invent.networks.decoder import Decoder
+from ReinventQC.reinvent_models.link_invent.networks.encoder import Encoder
 
 
 class EncoderDecoder(tnn.Module):

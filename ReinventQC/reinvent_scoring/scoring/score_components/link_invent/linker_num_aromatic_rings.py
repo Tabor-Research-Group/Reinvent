@@ -1,5 +1,5 @@
-from reinvent_scoring.scoring.component_parameters import ComponentParameters
-from reinvent_scoring.scoring.score_components.link_invent.base_link_invent_component import BaseLinkInventComponent
+from ReinventQC.reinvent_scoring.scoring.component_parameters import ComponentParameters
+from ReinventQC.reinvent_scoring.scoring.score_components.link_invent.base_link_invent_component import BaseLinkInventComponent
 
 
 class LinkerNumAromaticRings(BaseLinkInventComponent):

@@ -3,10 +3,10 @@ from typing import Dict, List
 import numpy as np
 from rdkit.Chem.rdChemReactions import ChemicalReaction
 
-from reinvent_chemistry.library_design import FragmentReactions
+from ReinventQC.reinvent_chemistry.library_design import FragmentReactions
 
-from reinvent_chemistry.library_design.reaction_filters.base_reaction_filter import BaseReactionFilter
-from reinvent_chemistry.library_design.reaction_filters.reaction_filter_configruation import ReactionFilterConfiguration
+from ReinventQC.reinvent_chemistry.library_design.reaction_filters.base_reaction_filter import BaseReactionFilter
+from ReinventQC.reinvent_chemistry.library_design.reaction_filters.reaction_filter_configruation import ReactionFilterConfiguration
 
 
 class NonSelectiveFilter(BaseReactionFilter):

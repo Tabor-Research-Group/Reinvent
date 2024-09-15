@@ -2,10 +2,10 @@ from copy import deepcopy
 
 import numpy as np
 
-from reinvent_scoring.scoring.diversity_filters.curriculum_learning import DiversityFilterParameters
-from reinvent_scoring.scoring.diversity_filters.curriculum_learning.base_diversity_filter import BaseDiversityFilter
-from reinvent_scoring.scoring.diversity_filters.curriculum_learning.memory_record_dto import MemoryRecordDTO
-from reinvent_scoring.scoring.diversity_filters.curriculum_learning.update_diversity_filter_dto import \
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.curriculum_learning import DiversityFilterParameters
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.curriculum_learning.base_diversity_filter import BaseDiversityFilter
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.curriculum_learning.memory_record_dto import MemoryRecordDTO
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.curriculum_learning.update_diversity_filter_dto import \
     UpdateDiversityFilterDTO
 
 
@@ -28,4 +28,3 @@ class NoFilter(BaseDiversityFilter):
                                              score_summary.scaffold_log)
                 self._add_to_memory(memory_dto)
         return scores
-

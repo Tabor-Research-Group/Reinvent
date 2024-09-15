@@ -1,9 +1,9 @@
 from typing import List, Dict, Any
 
 import numpy as np
-from reinvent_chemistry.conversions import Conversions
+from ReinventQC.reinvent_chemistry.conversions import Conversions
 
-from reinvent_scoring.scoring.predictive_model.base_model_container import BaseModelContainer
+from ReinventQC.reinvent_scoring.scoring.predictive_model.base_model_container import BaseModelContainer
 
 
 class OptunaModelContainer(BaseModelContainer):
@@ -29,5 +29,3 @@ class OptunaModelContainer(BaseModelContainer):
         activity = self._activity_model.predict_from_smiles(smiles)
 
         return activity
-
-

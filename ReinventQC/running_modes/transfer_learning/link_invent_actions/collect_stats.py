@@ -1,13 +1,13 @@
 import random
-from reinvent_chemistry import TransformationTokens
-from reinvent_chemistry.library_design import BondMaker, AttachmentPoints
-from reinvent_chemistry.conversions import Conversions
+from ReinventQC.reinvent_chemistry import TransformationTokens
+from ReinventQC.reinvent_chemistry.library_design import BondMaker, AttachmentPoints
+from ReinventQC.reinvent_chemistry.conversions import Conversions
 from typing import List, Optional
 
 import numpy as np
 import scipy.stats as sps
-from reinvent_models.model_factory.generative_model_base import GenerativeModelBase
-from reinvent_models.link_invent.dto import SampledSequencesDTO
+from ReinventQC.reinvent_models.model_factory.generative_model_base import GenerativeModelBase
+from ReinventQC.reinvent_models.link_invent.dto import SampledSequencesDTO
 
 from ReinventQC.running_modes.transfer_learning.dto.collected_stats_dto import CollectedStatsDTO
 from ReinventQC.running_modes.transfer_learning.dto.sampled_stats_dto import SampledStatsDTO

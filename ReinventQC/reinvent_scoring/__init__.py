@@ -1,1 +1,1 @@
-from reinvent_scoring.scoring import *
+from ReinventQC.reinvent_scoring.scoring import *

@@ -3,8 +3,8 @@ from typing import List, Dict, Tuple
 from rdkit.Chem.rdchem import Mol, AtomKekulizeException, Atom
 from rdkit.Chem.rdmolops import FragmentOnBonds, GetMolFrags
 
-from reinvent_chemistry import Conversions, TransformationTokens
-from reinvent_chemistry.library_design.dtos import ReactionOutcomeDTO
+from ReinventQC.reinvent_chemistry import Conversions, TransformationTokens
+from ReinventQC.reinvent_chemistry.library_design.dtos import ReactionOutcomeDTO
 
 
 class BondMapper:

@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import List
 
-from reinvent_scoring.scoring.score_summary import ComponentSummary
+from ReinventQC.reinvent_scoring.scoring.score_summary import ComponentSummary
 
 
 @dataclass

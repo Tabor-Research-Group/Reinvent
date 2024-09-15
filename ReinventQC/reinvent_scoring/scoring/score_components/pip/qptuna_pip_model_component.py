@@ -1,6 +1,6 @@
 from typing import List
-from reinvent_scoring.scoring.component_parameters import ComponentParameters
-from reinvent_scoring.scoring.score_components.pip.pip_prediction_component import PiPPredictionComponent
+from ReinventQC.reinvent_scoring.scoring.component_parameters import ComponentParameters
+from ReinventQC.reinvent_scoring.scoring.score_components.pip.pip_prediction_component import PiPPredictionComponent
 
 
 class QptunaPiPModelComponent(PiPPredictionComponent):

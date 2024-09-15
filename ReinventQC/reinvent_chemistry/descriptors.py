@@ -6,8 +6,8 @@ from rdkit.Avalon import pyAvalonTools
 from rdkit.Chem import AllChem, MACCSkeys, Mol
 from rdkit.Chem.rdMolDescriptors import GetHashedMorganFingerprint
 
-from reinvent_chemistry.enums.component_specific_parameters_enum import ComponentSpecificParametersEnum
-from reinvent_chemistry.enums.descriptor_types_enum import DescriptorTypesEnum
+from ReinventQC.reinvent_chemistry.enums.component_specific_parameters_enum import ComponentSpecificParametersEnum
+from ReinventQC.reinvent_chemistry.enums.descriptor_types_enum import DescriptorTypesEnum
 
 
 class Descriptors:

@@ -1,8 +1,8 @@
 import time
 from typing import List
 
-from reinvent_models.model_factory.generative_model_base import GenerativeModelBase
-from reinvent_scoring import FinalSummary
+from ReinventQC.reinvent_models.model_factory.generative_model_base import GenerativeModelBase
+from ReinventQC.reinvent_scoring import FinalSummary
 
 from ReinventQC.running_modes.constructors.base_running_mode import BaseRunningMode
 from ReinventQC.running_modes.reinforcement_learning.actions import LinkInventLikelihoodEvaluation, LinkInventSampleModel

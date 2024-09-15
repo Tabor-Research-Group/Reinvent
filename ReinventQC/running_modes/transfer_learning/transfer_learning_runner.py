@@ -4,13 +4,13 @@ import rdkit
 import torch
 import torch.nn.utils as tnnu
 import tqdm
-from reinvent_chemistry.enums import FilterTypesEnum
-from reinvent_chemistry.file_reader import FileReader
-from reinvent_chemistry.standardization.filter_configuration import FilterConfiguration
+from ReinventQC.reinvent_chemistry.enums import FilterTypesEnum
+from ReinventQC.reinvent_chemistry.file_reader import FileReader
+from ReinventQC.reinvent_chemistry.standardization.filter_configuration import FilterConfiguration
 
-import reinvent_models.reinvent_core.models.dataset as reinvent_dataset
-import reinvent_models.reinvent_core.models.vocabulary as reinvent_vocabulary
-from reinvent_models.reinvent_core.models.model import Model
+import ReinventQC.reinvent_models.reinvent_core.models.dataset as reinvent_dataset
+import ReinventQC.reinvent_models.reinvent_core.models.vocabulary as reinvent_vocabulary
+from ReinventQC.reinvent_models.reinvent_core.models.model import Model
 
 from ReinventQC.running_modes.constructors.base_running_mode import BaseRunningMode
 from ReinventQC.running_modes.configurations.transfer_learning.transfer_learning_configuration import TransferLearningConfiguration

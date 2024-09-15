@@ -1,11 +1,11 @@
 from typing import List, Dict
 import numpy as np
 
-from reinvent_chemistry.library_design import FragmentReactions
-from reinvent_chemistry.library_design.reaction_definitions.standard_definitions import StandardDefinitions
-from reinvent_chemistry.library_design.reaction_filters.reaction_filter_configruation import ReactionFilterConfiguration
+from ReinventQC.reinvent_chemistry.library_design import FragmentReactions
+from ReinventQC.reinvent_chemistry.library_design.reaction_definitions.standard_definitions import StandardDefinitions
+from ReinventQC.reinvent_chemistry.library_design.reaction_filters.reaction_filter_configruation import ReactionFilterConfiguration
 
-from reinvent_chemistry.library_design.reaction_filters.base_reaction_filter import BaseReactionFilter
+from ReinventQC.reinvent_chemistry.library_design.reaction_filters.base_reaction_filter import BaseReactionFilter
 
 
 class DefinedSelectiveFilter(BaseReactionFilter):

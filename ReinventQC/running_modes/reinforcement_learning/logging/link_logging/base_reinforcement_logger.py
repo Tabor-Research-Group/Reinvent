@@ -4,8 +4,8 @@ from abc import ABC, abstractmethod
 import logging
 
 import torch
-from reinvent_scoring.scoring.enums.scoring_function_component_enum import ScoringFunctionComponentNameEnum
-from reinvent_scoring.scoring.score_summary import FinalSummary
+from ReinventQC.reinvent_scoring.scoring.enums.scoring_function_component_enum import ScoringFunctionComponentNameEnum
+from ReinventQC.reinvent_scoring.scoring.score_summary import FinalSummary
 
 from ReinventQC.running_modes.configurations import GeneralConfigurationEnvelope, ReinforcementLoggerConfiguration
 

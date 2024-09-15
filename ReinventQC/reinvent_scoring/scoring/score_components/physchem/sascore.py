@@ -1,5 +1,5 @@
-from reinvent_scoring.scoring.component_parameters import ComponentParameters
-from reinvent_scoring.scoring.score_components.physchem.base_physchem_component import BasePhysChemComponent
+from ReinventQC.reinvent_scoring.scoring.component_parameters import ComponentParameters
+from ReinventQC.reinvent_scoring.scoring.score_components.physchem.base_physchem_component import BasePhysChemComponent
 from rdkit import Chem
 from rdkit.Chem import RDConfig
 import os
@@ -15,4 +15,3 @@ class SAScore(BasePhysChemComponent):
         sco = sascorer.calculateScore(mol)
 
         return sco
-

@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
-from reinvent_chemistry.library_design.reaction_filters.reaction_filter_configruation import ReactionFilterConfiguration
-from reinvent_scoring.scoring.diversity_filters.reinvent_core.diversity_filter_parameters import \
+from ReinventQC.reinvent_chemistry.library_design.reaction_filters.reaction_filter_configruation import ReactionFilterConfiguration
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.reinvent_core.diversity_filter_parameters import \
     DiversityFilterParameters
 
 from ReinventQC.running_modes.reinforcement_learning.configurations.scoring_strategy_configuration import \

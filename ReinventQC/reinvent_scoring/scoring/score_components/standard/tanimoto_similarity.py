@@ -1,9 +1,9 @@
 from typing import List
 
-from reinvent_chemistry.similarity import Similarity
-from reinvent_scoring.scoring.component_parameters import ComponentParameters
-from reinvent_scoring.scoring.score_components import BaseScoreComponent
-from reinvent_scoring.scoring.score_summary import ComponentSummary
+from ReinventQC.reinvent_chemistry.similarity import Similarity
+from ReinventQC.reinvent_scoring.scoring.component_parameters import ComponentParameters
+from ReinventQC.reinvent_scoring.scoring.score_components import BaseScoreComponent
+from ReinventQC.reinvent_scoring.scoring.score_summary import ComponentSummary
 
 
 class TanimotoSimilarity(BaseScoreComponent):
@@ -23,4 +23,3 @@ class TanimotoSimilarity(BaseScoreComponent):
         score = self._similarity.calculate_tanimoto(query_fps, self._ref_fingerprints)
         score_summary = ComponentSummary(total_score=score, parameters=self.parameters)
         return score_summary
-

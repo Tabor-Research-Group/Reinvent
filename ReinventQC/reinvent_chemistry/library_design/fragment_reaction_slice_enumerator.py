@@ -3,11 +3,11 @@ from typing import List, Tuple, Set
 
 from rdkit.Chem.rdchem import Mol
 
-from reinvent_chemistry import TransformationTokens, Conversions
-from reinvent_chemistry.library_design import FragmentFilter
-from reinvent_chemistry.library_design.dtos import FilteringConditionDTO, ReactionDTO
-from reinvent_chemistry.library_design.fragment_reactions import FragmentReactions
-from reinvent_chemistry.library_design.fragmented_molecule import FragmentedMolecule
+from ReinventQC.reinvent_chemistry import TransformationTokens, Conversions
+from ReinventQC.reinvent_chemistry.library_design import FragmentFilter
+from ReinventQC.reinvent_chemistry.library_design.dtos import FilteringConditionDTO, ReactionDTO
+from ReinventQC.reinvent_chemistry.library_design.fragment_reactions import FragmentReactions
+from ReinventQC.reinvent_chemistry.library_design.fragmented_molecule import FragmentedMolecule
 
 
 class FragmentReactionSliceEnumerator:

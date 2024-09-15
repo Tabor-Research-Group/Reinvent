@@ -5,7 +5,7 @@ import sys
 from abc import ABC, abstractmethod
 from typing import Tuple, List
 
-from reinvent_chemistry.conversions import Conversions
+from ReinventQC.reinvent_chemistry.conversions import Conversions
 
 # from rdkit.Chem import inchi
 

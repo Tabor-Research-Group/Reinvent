@@ -1,3 +1,2 @@
-from reinvent_models.link_invent.model_vocabulary.model_vocabulary import ModelVocabulary
-
+from ReinventQC.reinvent_models.link_invent.model_vocabulary.model_vocabulary import ModelVocabulary
 

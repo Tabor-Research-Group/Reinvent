@@ -1,9 +1,9 @@
 import numpy as np
 import requests
-from reinvent_chemistry.conversions import Conversions
+from ReinventQC.reinvent_chemistry.conversions import Conversions
 
-import running_modes.utils.configuration as utils_log
-from reinvent_chemistry.logging import fraction_valid_smiles
+import ReinventQC.running_modes.utils.configuration as utils_log
+from ReinventQC.reinvent_chemistry.logging import fraction_valid_smiles
 from ReinventQC.running_modes.configurations.general_configuration_envelope import GeneralConfigurationEnvelope
 from ReinventQC.running_modes.sampling.logging.base_sampling_logger import BaseSamplingLogger
 from ReinventQC.running_modes.configurations.logging import get_remote_logging_auth_token

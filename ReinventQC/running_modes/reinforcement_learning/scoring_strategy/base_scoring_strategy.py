@@ -1,10 +1,10 @@
 from abc import ABC, abstractmethod
 from typing import List
 
-from reinvent_chemistry import Conversions
-from reinvent_chemistry.library_design import BondMaker, AttachmentPoints
-from reinvent_scoring import FinalSummary, ScoringFunctionFactory
-from reinvent_scoring.scoring.diversity_filters.reinvent_core.base_diversity_filter import BaseDiversityFilter
+from ReinventQC.reinvent_chemistry import Conversions
+from ReinventQC.reinvent_chemistry.library_design import BondMaker, AttachmentPoints
+from ReinventQC.reinvent_scoring import FinalSummary, ScoringFunctionFactory
+from ReinventQC.reinvent_scoring.scoring.diversity_filters.reinvent_core.base_diversity_filter import BaseDiversityFilter
 
 from ReinventQC.running_modes.reinforcement_learning.configurations.scoring_strategy_configuration import \
     ScoringStrategyConfiguration

@@ -1,9 +1,9 @@
 import gzip
 from typing import List
 
-from reinvent_chemistry import Conversions
-from reinvent_chemistry.standardization.filter_configuration import FilterConfiguration
-from reinvent_chemistry.standardization.rdkit_standardizer import RDKitStandardizer
+from ReinventQC.reinvent_chemistry import Conversions
+from ReinventQC.reinvent_chemistry.standardization.filter_configuration import FilterConfiguration
+from ReinventQC.reinvent_chemistry.standardization.rdkit_standardizer import RDKitStandardizer
 
 
 class FileReader:

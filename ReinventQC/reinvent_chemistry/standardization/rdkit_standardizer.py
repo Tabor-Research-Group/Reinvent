@@ -2,9 +2,9 @@ from typing import Dict, List
 
 from rdkit.Chem.rdmolfiles import MolToSmiles
 
-from reinvent_chemistry import Conversions
-from reinvent_chemistry.standardization.filter_configuration import FilterConfiguration
-from reinvent_chemistry.standardization.filter_registry import FilterRegistry
+from ReinventQC.reinvent_chemistry import Conversions
+from ReinventQC.reinvent_chemistry.standardization.filter_configuration import FilterConfiguration
+from ReinventQC.reinvent_chemistry.standardization.filter_registry import FilterRegistry
 
 
 def disable_rdkit_logging():

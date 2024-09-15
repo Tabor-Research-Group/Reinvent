@@ -1,7 +1,7 @@
-from reinvent_chemistry.file_reader import FileReader
+from ReinventQC.reinvent_chemistry.file_reader import FileReader
 
-import reinvent_models.reinvent_core.models.model as reinvent
-import reinvent_models.reinvent_core.models.vocabulary as voc
+import ReinventQC.reinvent_models.reinvent_core.models.model as reinvent
+import ReinventQC.reinvent_models.reinvent_core.models.vocabulary as voc
 
 from ReinventQC.running_modes.constructors.base_running_mode import BaseRunningMode
 from ReinventQC.running_modes.configurations.create_model.create_model_configuration import CreateModelConfiguration

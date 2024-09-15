@@ -7,7 +7,7 @@ from rdkit.Chem import rdmolops
 from rdkit.Chem.rdmolfiles import MolFromSmarts, MolFromSmiles
 from rdkit.Chem.rdmolops import RemoveHs
 
-from reinvent_chemistry.enums import FilterTypesEnum
+from ReinventQC.reinvent_chemistry.enums import FilterTypesEnum
 
 
 class FilterRegistry:
