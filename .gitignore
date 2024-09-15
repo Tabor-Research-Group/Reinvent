@@ -6,6 +6,7 @@ tags
 .idea
 /configs/config.json
 README_internal.md
+.DS_Store
 
 # Coverage.py output
 .coverage

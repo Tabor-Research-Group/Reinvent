@@ -6,6 +6,12 @@ import json
 import argparse
 from pathlib import Path
 from running_modes.manager import Manager
+import django
+
+# Right here, change to match your database
+#os.environ["DJANGO_SETTINGS_MODULE"] = "djangochem.settings.default"
+# this must be run to setup access to the django settings and make database access work etc.
+#django.setup()
 
 
 DEFAULT_BASE_CONFIG_PATH = (Path(__file__).parent / 'configs/config.json').resolve()

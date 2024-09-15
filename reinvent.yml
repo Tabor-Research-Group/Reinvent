@@ -1,4 +1,4 @@
-name: reinvent.v3.2
+name: reinvent
 channels:
   - rdkit
   - pytorch
@@ -34,7 +34,7 @@ dependencies:
   - colorama=0.4.4
   - coverage=5.5
   - cryptography=3.2.1
-  - cudatoolkit=10.2.89
+  - cudatoolkit=11
   - cycler=0.10.0
   - cython=0.29.23
   - dacite=1.5.1
