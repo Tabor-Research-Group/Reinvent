@@ -1,6 +1,6 @@
 from dacite import from_dict
 
-from ReinventQC.running_modes.constructors.base_running_mode import BaseRunningMode
+from ReinventQC.running_modes.constructors.base_running_mode import BaseRunningMode, BaseMode
 from ReinventQC.running_modes.configurations import GeneralConfigurationEnvelope, CreateModelConfiguration, \
     LinkInventCreateModelConfiguration
 from ReinventQC.running_modes.create_model import CreateModelRunner, LinkInventCreateModelRunner
@@ -9,11 +9,17 @@ from ReinventQC.running_modes.enums.model_type_enum import ModelTypeEnum
 from ReinventQC.running_modes.utils.general import set_default_device_cuda
 
 
-class CreateModelModeConstructor:
+class CreateModelModeConstructor(BaseMode):
+    configuration_key = 'model_type'
+    registry = {}
+
     def __new__(cls, configuration: GeneralConfigurationEnvelope) -> BaseRunningMode:
         cls._configuration = configuration
         set_default_device_cuda()
         logger = CreateModelLogger(cls._configuration)
+        constructor = cls.get_default_constructor(configuration)
+        if constructor is not None:
+            return constructor(configuration)
         model_type_enum = ModelTypeEnum()
         if cls._configuration.model_type == model_type_enum.DEFAULT:
             config = from_dict(data_class=CreateModelConfiguration, data=cls._configuration.parameters)

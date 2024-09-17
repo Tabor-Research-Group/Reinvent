@@ -8,19 +8,26 @@ from ReinventQC.running_modes.configurations import GeneralConfigurationEnvelope
 from ReinventQC.running_modes.configurations.automated_curriculum_learning.automated_curriculum_learning_input_configuration import \
     AutomatedCurriculumLearningInputConfiguration
 from ReinventQC.running_modes.configurations.automated_curriculum_learning.base_configuration import BaseConfiguration
-from ReinventQC.running_modes.constructors.base_running_mode import BaseRunningMode
+from ReinventQC.running_modes.constructors.base_running_mode import BaseRunningMode, BaseMode
 from ReinventQC.running_modes.curriculum_learning.curriculum_runner import CurriculumRunner
 from ReinventQC.running_modes.enums.curriculum_type_enum import CurriculumTypeEnum
 from ReinventQC.running_modes.enums.model_type_enum import ModelTypeEnum
 from ReinventQC.running_modes.utils.general import set_default_device_cuda
 
 
-class CurriculumLearningModeConstructor:
+class CurriculumLearningModeConstructor(BaseMode):
+    configuration_key = 'curriculum_type'
+    registry = {}
+
     def __new__(self, configuration: GeneralConfigurationEnvelope) -> BaseRunningMode:
         self._configuration = configuration
         cl_enum = CurriculumTypeEnum
 
         base_config = BaseConfiguration.parse_obj(self._configuration.parameters)
+
+        constructor = self.get_default_constructor(base_config)
+        if constructor is not None:
+            return constructor(configuration)
 
         if base_config.curriculum_type == cl_enum.MANUAL:
             set_default_device_cuda()

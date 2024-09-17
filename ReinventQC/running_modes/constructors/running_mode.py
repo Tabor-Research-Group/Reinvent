@@ -1,5 +1,5 @@
 from ReinventQC.running_modes.configurations import GeneralConfigurationEnvelope
-from ReinventQC.running_modes.constructors.base_running_mode import BaseRunningMode
+from ReinventQC.running_modes.constructors.base_running_mode import BaseRunningMode, BaseMode
 from ReinventQC.running_modes.constructors.create_model_mode_constructor import CreateModelModeConstructor
 from ReinventQC.running_modes.constructors.curriculum_learning_mode_constructor import CurriculumLearningModeConstructor
 from ReinventQC.running_modes.constructors.reinforcement_learning_mode_constructor import ReinforcementLearningModeConstructor
@@ -10,10 +10,16 @@ from ReinventQC.running_modes.constructors.validation_mode_constructor import Va
 from ReinventQC.running_modes.enums.running_mode_enum import RunningModeEnum
 
 
-class RunningMode:
+class RunningMode(BaseMode):
+    configuration_key = 'run_type'
+    registry = {}
+
     def __new__(cls, configuration: GeneralConfigurationEnvelope) -> BaseRunningMode:
-        running_mode_enum = RunningModeEnum()
+        running_mode_enum = RunningModeEnum
         _configuration = configuration
+        constructor = cls.get_default_constructor(configuration)
+        if constructor is not None:
+            return constructor(configuration)
         if configuration.run_type == running_mode_enum.REINFORCEMENT_LEARNING:
             return ReinforcementLearningModeConstructor(configuration)
         if configuration.run_type == running_mode_enum.CURRICULUM_LEARNING:

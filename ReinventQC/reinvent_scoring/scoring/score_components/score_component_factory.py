@@ -4,21 +4,42 @@ from ReinventQC.reinvent_scoring.scoring.component_parameters import ComponentPa
 from ReinventQC.reinvent_scoring.scoring.enums import ScoringFunctionComponentNameEnum
 from ReinventQC.reinvent_scoring.scoring.score_components import BaseScoreComponent
 from ReinventQC.reinvent_scoring.scoring.score_components import TanimotoSimilarity, \
-    JaccardDistance, CustomAlerts, QedScore, MatchingSubstructure, MatchingScaffold,\
-    RocsSimilarity, ParallelRocsSimilarity, PredictivePropertyComponent, SelectivityComponent, \
+    JaccardDistance, CustomAlerts, QedScore, MatchingSubstructure, MatchingScaffold, \
+    RocsSimilarity, ParallelRocsSimilarity, PredictivePropertyComponent, ChemPropComponent, SelectivityComponent, \
     SASComponent, MolWeight, PSA, RotatableBonds, ConsRotatableBonds, Binder, SCScore, SAScore, HBD_Lipinski, HBA_Lipinski, \
     NumRings, SlogP, AZdock, RatPKPiP, PiPLogPredictionComponent, PiPPredictionComponent, \
     QptunaPiPModelComponent, StringPiPPredictionComponent, GraphLength, NumberOfStereoCenters, \
     LinkerLengthRatio, LinkerGraphLength, LinkerEffectiveLength, LinkerNumRings, LinkerNumAliphaticRings, \
     LinkerNumAromaticRings, LinkerNumSPAtoms, LinkerNumSP2Atoms, LinkerNumSP3Atoms, LinkerNumHBA, \
     LinkerNumHBD, LinkerMolWeight, LinkerRatioRotatableBonds, DockStream, NumAromaticRings, NumAliphaticRings
+
+from ReinventQC.reinvent_scoring.scoring.score_components.rest.general_rest_component import GeneralRESTComponent
+
 from ReinventQC.reinvent_scoring.scoring.score_components.console_invoked import Icolos, RunJobs, ExJobs, Triplets
 
 
 class ScoreComponentFactory:
     def __init__(self, parameters: List[ComponentParameters]):
         self._parameters = parameters
-        self._current_components = self._deafult_scoring_component_registry()
+        self._current_components = dict(
+            self._deafult_scoring_component_registry(),
+            **self.custom_scoring_component_registry
+        )
+
+    configuration_key = "scoring_component_type"
+    custom_scoring_component_registry = {}
+    @classmethod
+    def register(cls, config_key, constructor):
+        if isinstance(config_key, str):
+            if constructor is None:
+                return lambda const, cls=cls, key=config_key: cls.register(key, const)
+            else:
+                cls.custom_scoring_component_registry[config_key] = constructor
+        else:
+            constructor = config_key
+            run_type = getattr(constructor, cls.configuration_key)
+            cls.custom_scoring_component_registry[run_type] = constructor
+        return constructor
 
     def _deafult_scoring_component_registry(self) -> dict:
         enum = ScoringFunctionComponentNameEnum()
