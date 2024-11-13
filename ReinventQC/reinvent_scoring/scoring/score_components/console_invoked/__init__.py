@@ -1,4 +1,5 @@
 from ReinventQC.reinvent_scoring.scoring.score_components.console_invoked.icolos import Icolos
-from ReinventQC.reinvent_scoring.scoring.score_components.console_invoked.runjobs import RunJobs
-from ReinventQC.reinvent_scoring.scoring.score_components.console_invoked.exjobs import ExJobs
-from ReinventQC.reinvent_scoring.scoring.score_components.console_invoked.triplets import Triplets
+# from ReinventQC.reinvent_scoring.scoring.score_components.console_invoked.runjobs import RunJobs
+# from ReinventQC.reinvent_scoring.scoring.score_components.console_invoked.exjobs import ExJobs
+# from ReinventQC.reinvent_scoring.scoring.score_components.console_invoked.triplets import Triplets
+from ReinventQC.reinvent_scoring.scoring.score_components.console_invoked.python_invoked import PythonInvoked

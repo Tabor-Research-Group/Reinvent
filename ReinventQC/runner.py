@@ -6,7 +6,7 @@ import re, json, os
 
 __all__ = [
     'ConfigurationHandler',
-    'run_job'
+    'run'
 ]
 
 class ConfigurationHandler:
@@ -35,10 +35,19 @@ class ConfigurationHandler:
                 opts.update(cls.load_config(cfg))
         return opts
     @classmethod
+    def update_config_overrides(cls, config, overrides):
+        config = config.copy() # shallow copy for safetyp
+        for k,v in overrides.items():
+            if k not in config or not isinstance(v, dict):
+                config[k] = v
+            else:
+                cls.update_config_overrides(config[k], v)
+        return config
+    @classmethod
     def load(cls, config:'dict|str', **overrides):
         if isinstance(config, str):
             config = cls.load_config(config)
-        config.update(overrides)
+        config = cls.update_config_overrides(config, overrides)
         return config
 
     @classmethod
@@ -60,42 +69,26 @@ class ConfigurationHandler:
                 config[k] = cls.apply_templates(v, template_vars, template_re=template_re)
         return config
 
-def run(config, templates=None, **overrides):
+def run(config, output_dir=None, templates=None, **overrides):
     from .running_modes.manager import Manager
 
+    base_config = ConfigurationHandler.load_default_configs() # default log settings
     config = ConfigurationHandler.load(config, **overrides)
-    base_config = ConfigurationHandler.load_default_configs()
 
     if templates is not None:
         config = ConfigurationHandler.apply_templates(config, templates)
         base_config = ConfigurationHandler.apply_templates(base_config, templates)
 
+
     log_data = dict(
         base_config.get("logging", {}),
         **config.get("logging", {})
     )
-
-
-
-    configuration["logging"] = {
-        "sender": "http://0.0.0.1",  # only relevant if "recipient" is set to "remote"
-        "recipient": "local",  # either to local logging or use a remote REST-interface
-        "logging_frequency": 10,  # log every x-th steps
-        "logging_path": os.path.join(output_dir, "progress.log"),  # load this folder in tensorboard
-        "result_folder": os.path.join(output_dir, "results"),  # will hold the compounds (SMILES) and summaries
-        "job_name": "Reinforcement learning demo",  # set an arbitrary job name for identification
-        "job_id": "demo"  # only relevant if "recipient" is set to a specific REST endpoint
-    }
-
-    result_folder = base_config.load
-
-    base_dir = os.path.dirname(self.config.log_data.opts['result_folder'])
-    os.makedirs(base_dir, exist_ok=True)
+    result_folder = log_data.get('result_folder')
+    if result_folder is None:
+        result_folder = os.path.join(os.getcwd(), 'results')
+        log_data['result_folder'] = result_folder
+    os.makedirs(result_folder, exist_ok=True)
 
     manager = Manager(base_config, config)
     manager.run()
-
-
-def run_job(**config):
-    Runner.from_parameters(**config).run_job()
-
