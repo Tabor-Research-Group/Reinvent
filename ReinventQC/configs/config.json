@@ -1,0 +1,8 @@
+{
+  "version": 3.2,
+  "logging": {
+    "sender": "http://0.0.0.1",
+    "recipient": "local",
+    "logging_frequency": 10
+  }
+}

@@ -10,7 +10,7 @@ __all__ = [
 ]
 
 class ConfigurationHandler:
-    CONFIGURATION_PATHS = []
+    CONFIGURATION_PATHS = [os.path.join(os.path.dirname(os.path.abspath(__file__)), 'configs')]
     CONFIGURATION_PATHS_ENV = "REINVENTQC_CONFIG_PATH"
     @classmethod
     def get_configuration_paths(cls):
@@ -78,7 +78,6 @@ def run(config, output_dir=None, templates=None, **overrides):
     if templates is not None:
         config = ConfigurationHandler.apply_templates(config, templates)
         base_config = ConfigurationHandler.apply_templates(base_config, templates)
-
 
     log_data = dict(
         base_config.get("logging", {}),
