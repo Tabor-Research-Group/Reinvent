@@ -1,10 +1,12 @@
 from ReinventQC.reinvent_scoring.scoring.component_parameters import ComponentParameters
 from ReinventQC.reinvent_scoring.scoring.score_components.physchem.base_physchem_component import BasePhysChemComponent
 from rdkit import Chem
-from alfabet import model
 
 class Binder(BasePhysChemComponent):
     def __init__(self, parameters: ComponentParameters):
+        from alfabet import model
+        self.model = model
+
         super().__init__(parameters)
         self.patt1 = Chem.MolFromSmarts("[#6]")
         self.patt2 = Chem.MolFromSmarts("[C]=[C]")
@@ -14,6 +16,7 @@ class Binder(BasePhysChemComponent):
         #self.patt6 = Chem.MolFromSmarts("[$([*]-[N,OH1])]")
 
     def _calculate_phys_chem_property(self, mol):
+
         # Check if number of carbon <= 12
         if len(mol.GetSubstructMatches(self.patt1)) > 12:
             return 0
@@ -31,7 +34,7 @@ class Binder(BasePhysChemComponent):
         #    return 0
         # Check if minimum BDFE for C-H bond larger than 87.2 kcal/mol
         smiles = Chem.MolToSmiles(mol)
-        df = model.predict([smiles])
+        df = self.model.predict([smiles])
         min_bdfe = df[df['bond_type'] == 'C-H']['bdfe_pred'].min()
         #if min_bdfe < 87.2:
         #    return 0

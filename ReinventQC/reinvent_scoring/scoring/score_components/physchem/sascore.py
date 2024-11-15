@@ -5,13 +5,14 @@ from rdkit.Chem import RDConfig
 import os
 import sys
 sys.path.append(os.path.join(RDConfig.RDContribDir, 'SA_Score'))
-import sascorer
 
 class SAScore(BasePhysChemComponent):
     def __init__(self, parameters: ComponentParameters):
+        import sascorer
+        self.model = sascorer
         super().__init__(parameters)
 
     def _calculate_phys_chem_property(self, mol):
-        sco = sascorer.calculateScore(mol)
+        sco = self.model.calculateScore(mol)
 
         return sco
