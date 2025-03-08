@@ -5,8 +5,8 @@ import sys
 import json
 import argparse
 from pathlib import Path
-from running_modes.manager import Manager
-import django
+from ReinventQC.running_modes.manager import Manager
+# import django
 
 # Right here, change to match your database
 #os.environ["DJANGO_SETTINGS_MODULE"] = "djangochem.settings.default"

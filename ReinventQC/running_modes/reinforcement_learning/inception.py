@@ -11,7 +11,7 @@ class Inception:
     def __init__(self, configuration: InceptionConfiguration, scoring_function, prior):
         self.configuration = configuration
         self._chemistry = Conversions()
-        self.memory: pd.DataFrame = pd.DataFrame(columns=['smiles', 'scaffolds', 'score', 'likelihood'])
+        self.memory: pd.DataFrame = pd.DataFrame()
         #self.memory: pd.DataFrame = pd.DataFrame(columns=['smiles', 'score', 'likelihood'])
         self._load_to_memory(scoring_function, prior, self.configuration.smiles)
 
@@ -38,7 +38,7 @@ class Inception:
             likelihood = prior.likelihood_smiles(smiles)
             df = pd.DataFrame({"smiles": smiles, "scaffolds": scaffolds, "score": score.total_score, "likelihood": -likelihood.detach().cpu().numpy()})
             #df = pd.DataFrame({"smiles": smiles, "score": score.total_score, "likelihood": -likelihood.detach().cpu().numpy()})
-            self.memory = self.memory.append(df)
+            self.memory = pd.concat([self.memory, df], ignore_index=True)
             self._purge_memory()
 
     def add(self, smiles, score, neg_likelihood):
@@ -51,7 +51,7 @@ class Inception:
                 except:
                     scaffolds.append(None)
             df = pd.DataFrame({"smiles": smiles, "scaffolds": scaffolds, "score": score, "likelihood": neg_likelihood.detach().cpu().numpy()})
-            self.memory = self.memory.append(df)
+            self.memory = pd.concat([self.memory, df], ignore_index=True)
             self._purge_memory()
 
     def sample(self) -> Tuple[List[str], np.array, np.array]:

@@ -15,7 +15,7 @@ from ReinventQC.reinvent_scoring.scoring.score_components import TanimotoSimilar
 
 from ReinventQC.reinvent_scoring.scoring.score_components.rest.general_rest_component import GeneralRESTComponent
 
-from ReinventQC.reinvent_scoring.scoring.score_components.console_invoked import Icolos, RunJobs, ExJobs, Triplets
+from ReinventQC.reinvent_scoring.scoring.score_components.console_invoked import Icolos # , RunJobs, ExJobs, Triplets
 
 
 class ScoreComponentFactory:
@@ -100,9 +100,9 @@ class ScoreComponentFactory:
             enum.LINKER_RATIO_ROTATABLE_BONDS: LinkerRatioRotatableBonds,
             enum.DOCKSTREAM: DockStream,
             enum.ICOLOS: Icolos,
-            enum.RUNJOBS: RunJobs,
-            enum.EXJOBS: ExJobs,
-            enum.TRIPLETS: Triplets,
+            # enum.RUNJOBS: RunJobs,
+            # enum.EXJOBS: ExJobs,
+            # enum.TRIPLETS: Triplets,
             # enum.AIZYNTH: BuildingBlockAvailabilityComponent
             enum.GENERAL_REST: GeneralRESTComponent
         }
