@@ -15,14 +15,14 @@ from ReinventQC.reinvent_scoring.scoring.score_components import TanimotoSimilar
 
 from ReinventQC.reinvent_scoring.scoring.score_components.rest.general_rest_component import GeneralRESTComponent
 
-from ReinventQC.reinvent_scoring.scoring.score_components.console_invoked import Icolos # , RunJobs, ExJobs, Triplets
+from ReinventQC.reinvent_scoring.scoring.score_components.console_invoked import Icolos, PythonInvoked # , RunJobs, ExJobs, Triplets
 
 
 class ScoreComponentFactory:
     def __init__(self, parameters: List[ComponentParameters]):
         self._parameters = parameters
         self._current_components = dict(
-            self._deafult_scoring_component_registry(),
+            self._default_scoring_component_registry(),
             **self.custom_scoring_component_registry
         )
 
@@ -41,7 +41,7 @@ class ScoreComponentFactory:
             cls.custom_scoring_component_registry[run_type] = constructor
         return constructor
 
-    def _deafult_scoring_component_registry(self) -> dict:
+    def _default_scoring_component_registry(self) -> dict:
         enum = ScoringFunctionComponentNameEnum()
         component_map = {
             enum.MATCHING_SUBSTRUCTURE: MatchingSubstructure,
@@ -100,6 +100,7 @@ class ScoreComponentFactory:
             enum.LINKER_RATIO_ROTATABLE_BONDS: LinkerRatioRotatableBonds,
             enum.DOCKSTREAM: DockStream,
             enum.ICOLOS: Icolos,
+            enum.PYTHON_INVOKED: PythonInvoked,
             # enum.RUNJOBS: RunJobs,
             # enum.EXJOBS: ExJobs,
             # enum.TRIPLETS: Triplets,

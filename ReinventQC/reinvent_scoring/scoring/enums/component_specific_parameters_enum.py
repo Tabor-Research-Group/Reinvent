@@ -43,3 +43,6 @@ class ComponentSpecificParametersEnum:
     AIZYNTH_CONFIG_FILE_PATH = "aizynth_config_file_path"
 
     VALUE_MAPPING = "value_mapping"
+
+    PYTHON_FUNCTION = "custom_function"
+    PYTHON_MODULE = "custom_module"

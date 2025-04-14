@@ -31,6 +31,7 @@ class ScoringFunctionComponentNameEnum:
     NUMBER_OF_STEREO_CENTERS = "number_of_stereo_centers"
     TOTAL_SCORE = "total_score" # there is no actual component corresponding to this type
     REACTION_FILTERS = "reaction_filters"
+    PYTHON_INVOKED = "custom_function"
 
     # Link invent specific
     LINKER_EFFECTIVE_LENGTH = "linker_effective_length"
